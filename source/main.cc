@@ -64,10 +64,18 @@ int main() {
             cout << endl;
             break;
         case 5:
-            cout << "TODO: ADD DFS PRINT FOR THIS GRAPH" << endl;
+            cin >> course; 
+            screen_wipe();
+            cout << endl;
+            current_graph.print_DFS(course);
+            cout << endl;
             break;
         case 6:
-            cout << "TODO: ADD BFS PRINT FOR THIS GRAPH" << endl;
+            cin >> course; 
+            screen_wipe();
+            cout << endl;
+            current_graph.print_BFS(course);
+            cout << endl;
             break;
         case 7:
             in_menu = false;

@@ -1,12 +1,10 @@
 #include "headers/program_functions.hpp"
 
 void screen_wipe(){
-	//Windows only lol!
 	#if defined __WIN64__ || __WIN32__
 	system("cls");
 	#endif                                                                          
 	
-	//Linux only lol!
 	#if defined __linux__
 	if(system("clear")){}
 	#endif

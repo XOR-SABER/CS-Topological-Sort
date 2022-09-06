@@ -141,9 +141,7 @@ std::vector<std::string> Graph::list_all_prereqs(std::string course) {
     }
     //Recursion?
     size_t current_index = hash[course];
-    for(std::string s : list[current_index].connections) {
-        find_prereqs(retval, s, check);
-    }
+    for(std::string s : list[current_index].connections) find_prereqs(retval, s, check);
     return retval;
 }
 //Helper function to list_all_prereqs
@@ -198,3 +196,50 @@ std::vector<std::string> Graph::list_common_prereqs(std::string a, std::string b
     return common_prereqs(a,b);
 }
 
+void Graph::print_BFS(std::string course) {
+    if(!hash.count(course)) {
+        COURSE_NOT_FOUND;
+        return;
+    }
+    std::unordered_set<std::string> check; 
+    std::stack<std::string> queue; 
+    
+    check.insert(course);
+    queue.push(course);
+
+    while (!queue.empty()) {
+        std::string current_course = queue.top();
+        queue.pop();
+        std::cout << current_course << " ";
+        for(std::string s : list.at(hash[current_course]).connections) {
+            if(!check.count(s)) {
+                check.insert(s);
+                queue.push(s);
+            }
+        }
+    }
+    std::cout << std::endl;
+}
+
+void Graph::print_DFS(std::string course) {
+    if(!hash.count(course)) {
+        COURSE_NOT_FOUND;
+        return;
+    }
+    std::unordered_set<std::string> check; 
+    
+    for(std::string s : list.at(hash[course]).connections) {
+        DFS(s, check);
+    }
+    std::cout << std::endl;
+}
+void Graph::DFS(std::string course, std::unordered_set<std::string> &check) {
+    //Did we vist it?
+    if(check.count(course)) return;
+
+    std::cout << course << " ";
+    check.insert(course);
+    size_t index = hash[course];
+    for(std::string s : list.at(index).connections) DFS(s, check);
+    return;
+}

@@ -9,6 +9,7 @@
 #include <string>
 #include <cctype>
 #include <vector>
+#include <stack>
 #include "read.h"
 
 //Just a neat macro set up for file not
@@ -30,6 +31,7 @@ class Graph{
     private:
         std::unordered_map<std::string, size_t> hash;
         std::vector<Vertex> list;
+        void DFS(std::string, std::unordered_set<std::string> &check);
         std::vector<std::string> common_prereqs(std::string a, std::string b);
         void find_prereqs(std::string&, std::string, std::unordered_set<std::string>&);     
         void find_prereqs(std::vector<std::string>&, std::string, std::unordered_set<std::string>&);
@@ -37,6 +39,8 @@ class Graph{
     public:
         Graph() = delete;
         Graph(std::string);
+        void print_DFS(std::string);
+        void print_BFS(std::string);
         void build_graph(std::string);
         bool hash_query(std::string);
         size_t hash_get(std::string);

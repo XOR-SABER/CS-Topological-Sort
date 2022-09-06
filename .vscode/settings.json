@@ -53,6 +53,8 @@
         "unordered_set": "cpp",
         "algorithm": "cpp",
         "set": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "deque": "cpp",
+        "stack": "cpp"
     }
 }

@@ -160,19 +160,48 @@ void Graph::find_prereqs(std::vector<std::string> &retval, std::string course, s
 //Step One: Create a list of all the preqreqs in the class A
 //Step Two: Go through class B and check for overlap then return the overlap
 //Step Three: This should be faster???  
-
-
-//I think there's a faster algo for this? since this is O(n(V+E)) IN FACT I THINK THERE IS?
 std::vector<std::string> Graph::common_prereqs(std::string a, std::string b) {
-    std::vector<std::string> prereqsA = list_all_prereqs(a); //O(V+E)
-    std::vector<std::string> prereqsB = list_all_prereqs(b); //O(V+E)
+    std::unordered_set<std::string> check;
+    std::unordered_set<std::string> check1;
     std::vector<std::string> result;
-    //For some reason we have to sort them? 
-    std::sort(prereqsA.begin(), prereqsA.end());
-    std::sort(prereqsB.begin(), prereqsB.end());
-    //O(N)
-    std::set_intersection(prereqsA.begin(), prereqsA.end(), prereqsB.begin(), prereqsB.end(), std::back_inserter(result));
+    //Check if A and B exists
+    if(!hash.count(a)) return result;
+    if(!hash.count(b)) return result;
+    //Insert them into a the hash browns
+    check.insert(a);
+    check.insert(b);
+    //We are doing a DFS at A
+    //Optimization
+    //Some classes just have another class in the same series as a preq just list the prereqs of that class
+    if(list[hash[a]].connections.at(0) == b) return list_all_prereqs(b);
+    if(list[hash[b]].connections.at(0) == a) return list_all_prereqs(a);
+    for(std::string s : list[hash[a]].connections) DFS_intersect(s, check);
+    for(std::string s : list[hash[b]].connections) intersect_traversal(result, s, check, check1);
+    //then checking by doing a DFS at B for overlap
     return result;
+}
+
+void Graph::DFS_intersect(std::string course, std::unordered_set<std::string> &check) {
+    //std::cout << course << std::endl;
+    //Did we vist it?
+    if(check.count(course)) return;
+    check.insert(course);
+    size_t index = hash[course];
+    for(std::string s : list.at(index).connections) DFS_intersect(s, check);
+    return;
+}
+
+void Graph::intersect_traversal(std::vector<std::string> &retval, std::string course, std::unordered_set<std::string> &check, std::unordered_set<std::string> &check1) {
+    //Have we seen in our current hash?
+    if(check1.count(course)) return;
+    size_t index = hash[course];
+    for(std::string s : list.at(index).connections) intersect_traversal(retval, s, check, check1);
+    //Have we not seen it in our old hash? 
+    if(!check.count(course)) return;
+    //We seen it
+    check1.insert(course);
+    retval.push_back(course);
+    return;
 }
 
 std::string Graph::print_common_prereqs(std::string a, std::string b) {
@@ -203,10 +232,9 @@ void Graph::print_BFS(std::string course) {
     }
     std::unordered_set<std::string> check; 
     std::stack<std::string> queue; 
-    
     check.insert(course);
     queue.push(course);
-
+    
     while (!queue.empty()) {
         std::string current_course = queue.top();
         queue.pop();
@@ -227,7 +255,7 @@ void Graph::print_DFS(std::string course) {
         return;
     }
     std::unordered_set<std::string> check; 
-    
+    std::cout << course << " ";
     for(std::string s : list.at(hash[course]).connections) {
         DFS(s, check);
     }

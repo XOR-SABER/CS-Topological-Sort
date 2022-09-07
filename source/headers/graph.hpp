@@ -33,9 +33,14 @@ class Graph{
         std::vector<Vertex> list;
         void DFS(std::string, std::unordered_set<std::string> &check);
         std::vector<std::string> common_prereqs(std::string a, std::string b);
+        void DFS_intersect(std::string course, std::unordered_set<std::string> &check);
         void find_prereqs(std::string&, std::string, std::unordered_set<std::string>&);     
         void find_prereqs(std::vector<std::string>&, std::string, std::unordered_set<std::string>&);
         void find_intersect(std::vector<std::string>&, std::string, std::unordered_set<std::string>&);   
+        void intersect_traversal(std::vector<std::string> &retval,
+                                 std::string course,
+                                 std::unordered_set<std::string> &check,
+                                 std::unordered_set<std::string> &check1);
     public:
         Graph() = delete;
         Graph(std::string);

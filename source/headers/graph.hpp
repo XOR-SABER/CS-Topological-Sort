@@ -21,6 +21,8 @@ class Graph{
         std::unordered_map<std::string, size_t> hash;
     protected:
         void DFS(std::string, std::unordered_set<std::string>&);
+        bool check_prereqs(std::unordered_set<std::string>&,size_t);
+        std::vector<std::string> find_classes(std::vector<std::string>);
         std::vector<std::string> common_prereqs(std::string, std::string);
         void DFS_intersect(std::string, std::unordered_set<std::string> &);
         void find_prereqs(std::string&, std::string, std::unordered_set<std::string>&);     

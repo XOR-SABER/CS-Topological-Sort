@@ -1,27 +1,13 @@
 #include "headers/Graph.hpp"
 
-//Makes my life a little easier
-std::string Vertex::operator[](size_t index) {
-    return connections[index];
-}
-
-//Print out each vertex
-std::ostream &operator<<(std::ostream &outs, const Vertex &v) {
-    outs << "Class: " << v.name << "\n\tPrereqs: ";
-    if(v.connections.empty()) outs << "None ";
-    else for(const std::string &s : v.connections) outs << s << " ";
-    outs << "\n\tPrereq weight : " << v.weight;
+std::ostream &operator<<(std::ostream &outs, const Graph &g) {
+    for(const Vertex &v : g.list) outs << v << std::endl;
     return outs;
 }
 
 //Interface for the graph
 Vertex Graph::operator[](size_t index) {
     return list.at(index);
-}
-
-std::ostream &operator<<(std::ostream &outs, const Graph &g) {
-    for(const Vertex &v : g.list) outs << v << std::endl;
-    return outs;
 }
 
 Graph::Graph(std::string filename) {
@@ -159,7 +145,7 @@ void Graph::find_prereqs(std::vector<std::string> &retval, std::string course, s
 }
 //Step One: Create a list of all the preqreqs in the class A
 //Step Two: Go through class B and check for overlap then return the overlap
-//Step Three: This should be faster???  
+//Step Three: This should be faster???  I Belive it. But a bitmore wastefull of memory
 std::vector<std::string> Graph::common_prereqs(std::string a, std::string b) {
     std::unordered_set<std::string> check;
     std::unordered_set<std::string> check1;
@@ -173,16 +159,17 @@ std::vector<std::string> Graph::common_prereqs(std::string a, std::string b) {
     //We are doing a DFS at A
     //Optimization
     //Some classes just have another class in the same series as a preq just list the prereqs of that class
+    //0(N) case
     if(list[hash[a]].connections.at(0) == b) return list_all_prereqs(b);
     if(list[hash[b]].connections.at(0) == a) return list_all_prereqs(a);
+    //0((V*E))
     for(std::string s : list[hash[a]].connections) DFS_intersect(s, check);
     for(std::string s : list[hash[b]].connections) intersect_traversal(result, s, check, check1);
     //then checking by doing a DFS at B for overlap
     return result;
 }
-
+//Recursive function
 void Graph::DFS_intersect(std::string course, std::unordered_set<std::string> &check) {
-    //std::cout << course << std::endl;
     //Did we vist it?
     if(check.count(course)) return;
     check.insert(course);
@@ -190,7 +177,7 @@ void Graph::DFS_intersect(std::string course, std::unordered_set<std::string> &c
     for(std::string s : list.at(index).connections) DFS_intersect(s, check);
     return;
 }
-
+//Recursive function that returns a set that is a intersection of prereqs while traversing
 void Graph::intersect_traversal(std::vector<std::string> &retval, std::string course, std::unordered_set<std::string> &check, std::unordered_set<std::string> &check1) {
     //Have we seen in our current hash?
     if(check1.count(course)) return;
@@ -204,6 +191,7 @@ void Graph::intersect_traversal(std::vector<std::string> &retval, std::string co
     return;
 }
 
+//Helper function for Common_prereqs that creates and returns a format string
 std::string Graph::print_common_prereqs(std::string a, std::string b) {
     std::vector<std::string> result = common_prereqs(a,b);
     std::string retval;
@@ -220,11 +208,12 @@ std::string Graph::print_common_prereqs(std::string a, std::string b) {
 
     return retval;
 }
-
+//Helper function for Common_prereqs that returns a vector of strings
 std::vector<std::string> Graph::list_common_prereqs(std::string a, std::string b) {
     return common_prereqs(a,b);
 }
 
+//Prints the node and its connections in Breath First Search
 void Graph::print_BFS(std::string course) {
     if(!hash.count(course)) {
         COURSE_NOT_FOUND;
@@ -248,7 +237,7 @@ void Graph::print_BFS(std::string course) {
     }
     std::cout << std::endl;
 }
-
+//Prints the node and its connections in Depth First Search
 void Graph::print_DFS(std::string course) {
     if(!hash.count(course)) {
         COURSE_NOT_FOUND;
@@ -261,6 +250,7 @@ void Graph::print_DFS(std::string course) {
     }
     std::cout << std::endl;
 }
+//Recursive function that is called
 void Graph::DFS(std::string course, std::unordered_set<std::string> &check) {
     //Did we vist it?
     if(check.count(course)) return;
@@ -271,3 +261,20 @@ void Graph::DFS(std::string course, std::unordered_set<std::string> &check) {
     for(std::string s : list.at(index).connections) DFS(s, check);
     return;
 }
+
+//Step one: check the first one on the list
+//If that class is done, resume searching
+//If that class was never taken, check its prereqs
+//Step Two: If that class was never taken AND it has all the prereqs completed 
+//Then add to our return vector
+//When 
+
+
+
+// std::string Graph::print_find_classes(std::vector<std::string> courses) {
+
+// }
+
+// std::vector<std::string> Graph::list_find_classes(std::vector<std::string> courses) {
+
+// }

@@ -255,29 +255,6 @@ void Graph::DFS(std::string course, std::unordered_set<std::string> &check) {
     for(std::string s : list.at(index).connections) DFS(s, check);
     return;
 }
-//Brute Force
-//0(N^2) Algo
-//Step one: check the first one on the list
-//If that class is done, resume searching
-//If that class was never taken, check its prereqs 
-//Step Two: If that class was never taken AND it has all the prereqs completed 
-//Then add to our return vector
-//Loop through the entire list
-
-//Divide and conquer? 
-//Possible O(N log N) algo: 
-//Find common prereq
-//Hashing, Caching, right data structure 
-//Check each one on the list: 
-//If it has been taken skip
-//If it hasn't been taken 
-//Then check the first prereq
-//if its done then check the next one
-//This would stop of on nesscary looping
-//Split this task into recursive functions
-//if the program hasn't been taken, 
-//and the first prereq is golden then.
-//Call the recursive check 
 
 bool Graph::check_prereqs(std::unordered_set<std::string> &check, size_t current_index) {
     for(std::string s : list[current_index].connections) {
@@ -285,7 +262,6 @@ bool Graph::check_prereqs(std::unordered_set<std::string> &check, size_t current
     }
     return true;
 }
-
 
 
 std::vector<std::string> Graph::find_classes(std::vector<std::string> courses) {
@@ -303,12 +279,4 @@ std::vector<std::string> Graph::find_classes(std::vector<std::string> courses) {
         }
     }
     return retval;
-}
-
-std::string Graph::print_find_classes(std::vector<std::string> courses) {
-
-}
-
-std::vector<std::string> Graph::list_find_classes(std::vector<std::string> courses) {
-
 }

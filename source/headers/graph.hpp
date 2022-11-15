@@ -38,10 +38,8 @@ class Graph{
         size_t hash_get(std::string);
         //Am probably gonna make helper functions for format string and vector
         std::string print_all_prereqs(std::string);
-        std::string print_find_classes(std::vector<std::string>);
         std::string print_common_prereqs(std::string, std::string);
         std::vector<std::string> list_all_prereqs(std::string);
-        std::vector<std::string> list_find_classes(std::vector<std::string>);
         std::vector<std::string> list_common_prereqs(std::string, std::string);
         Vertex operator[](size_t);
         friend std::ostream &operator<<(std::ostream&, const Graph&);

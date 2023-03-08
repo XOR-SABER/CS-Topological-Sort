@@ -1,5 +1,7 @@
 #ifndef _ALEX_VERTEX_HPP
 #define _ALEX_VERTEX_HPP
+
+// Standard Headers:
 #include <vector>
 #include <string>
 #include <iostream>

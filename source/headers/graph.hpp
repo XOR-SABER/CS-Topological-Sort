@@ -1,5 +1,7 @@
 #ifndef _ALEX_GRAPH_HPP
 #define _ALEX_GRAPH_HPP
+
+// Standard headers: 
 #include <unordered_set>
 #include <unordered_map>
 #include <algorithm>
@@ -8,12 +10,10 @@
 #include <cctype>
 #include <stack>
 
+
+// Custom Headers:
 #include "vertex.hpp"
 #include "read.h"
-
-//Just a neat macro set up for file not
-#define FILE_NOT_FOUND std::cout << "File not found, exiting program.. \n", exit(0)
-#define COURSE_NOT_FOUND std::cout << "Course not found.. \n"
 
 class Graph{
     private:
@@ -22,26 +22,29 @@ class Graph{
     protected:
         void DFS(std::string, std::unordered_set<std::string>&);
         bool check_prereqs(std::unordered_set<std::string>&,size_t);
-        std::vector<std::string> find_classes(std::vector<std::string>);
+        std::vector<std::string> find_classes(const std::vector<std::string> &);
         std::vector<std::string> common_prereqs(std::string, std::string);
         void DFS_intersect(std::string, std::unordered_set<std::string> &);
-        void find_prereqs(std::string&, std::string, std::unordered_set<std::string>&);     
-        void find_prereqs(std::vector<std::string>&, std::string, std::unordered_set<std::string>&);
+        void find_prereqs(std::string&, const std::string &, std::unordered_set<std::string>&);     
+        void find_prereqs(std::vector<std::string>&, const std::string &, std::unordered_set<std::string>&);
         void intersect_traversal(std::vector<std::string>&, std::string, std::unordered_set<std::string>&, std::unordered_set<std::string>&);
     public:
         Graph() = delete;
-        Graph(std::string);
-        void print_DFS(std::string);
-        void print_BFS(std::string);
-        void build_graph(std::string);
-        bool hash_query(std::string);
-        size_t hash_get(std::string);
+        Graph(const std::string &);
+        void print_DFS(const std::string &);
+        void print_BFS(const std::string &);
+        void build_graph(const std::string &);
+        bool hash_query(const std::string &);
+        size_t hash_get(const std::string &);
         //Am probably gonna make helper functions for format string and vector
-        std::string print_all_prereqs(std::string);
-        std::string print_common_prereqs(std::string, std::string);
-        std::vector<std::string> list_all_prereqs(std::string);
-        std::vector<std::string> list_common_prereqs(std::string, std::string);
-        Vertex operator[](size_t);
+        std::string print_all_prereqs(const std::string &);
+        std::string print_common_prereqs(const std::string &, const std::string &);
+        std::vector<std::string> list_all_prereqs(const std::string &);
+        std::vector<std::string> list_common_prereqs(const std::string &, const std::string &);
         friend std::ostream &operator<<(std::ostream&, const Graph&);
 };
+
+void screen_wipe();
+void menu();
+
 #endif

@@ -13,6 +13,6 @@ using namespace std;
 
 int main() {
     //Abstract this out to another function.. 
-    Graph current_graph("Graphs/fresnoState.dat");
+    Graph current_graph("Graphs/fresnoStateCSCI.dat");
     return 0;
 }

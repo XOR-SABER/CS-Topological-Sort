@@ -10,6 +10,7 @@ struct Vertex{
     //Name of the class
     std::string name;
     std::vector<std::string> connections;
+    std::vector<std::string> topo_cache; 
     std::string operator[](size_t);
     //How common its a preq
     size_t weight = 0;

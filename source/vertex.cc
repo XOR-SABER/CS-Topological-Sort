@@ -13,4 +13,3 @@ std::ostream &operator<<(std::ostream &outs, const Vertex &v) {
     outs << "\n\tPrereq weight : " << v.weight;
     return outs;
 }
-

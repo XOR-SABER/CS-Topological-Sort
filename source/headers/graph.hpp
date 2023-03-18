@@ -24,6 +24,7 @@ class Graph{
 
         // DFS recusrive function.. 
         void DFS(std::string, std::unordered_set<std::string>&); 
+        // We call this in list_all_prereqs
         void find_prereqs(std::vector<std::string>&, const std::string &, std::unordered_set<std::string>&);
     public:
         Graph() = delete;
@@ -36,6 +37,7 @@ class Graph{
         void build_graph(const std::string &);
         // Prints all prereqs
         std::string print_all_prereqs(const std::string &);
+        // This is the topological sorting.. 
         std::vector<std::string> list_all_prereqs(const std::string &);
         // Overload to print out the graph
         friend std::ostream &operator<<(std::ostream&, const Graph&);

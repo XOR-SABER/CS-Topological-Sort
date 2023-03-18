@@ -2,7 +2,7 @@
 
 //Makes my life a little easier
 std::string Vertex::operator[](size_t index) {
-    return connections[index];
+    return connections.at(index);
 }
 
 //Print out each vertex

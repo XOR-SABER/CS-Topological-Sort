@@ -7,7 +7,8 @@
 // This has to be the first time, I used a pure virual function.. 
 // I might use this.. 
 struct Serializable { 
-    constexpr virtual std::string Serialize() const = 0; 
+    virtual std::string Serialize() = 0; 
+    constexpr virtual std::ifstream Deserialize() const = 0; 
 };
 
 #endif

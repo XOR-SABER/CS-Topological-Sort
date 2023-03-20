@@ -37,6 +37,7 @@ constexpr void format_str(const Container& c, std::string &retval) {
         retval += s;
     }
 }
+
 //This abstracts out the format function, using templates. 
 // if the vector is {"CSCI-1", "CSCI-40", "CSCI-41"} returns "CSCI-1 -> CSCI-40 -> CSCI-41"
 template<typename Container, 
@@ -54,11 +55,12 @@ constexpr void format_str_arrow(const Container& c, std::string &retval) {
 Graph::Graph(const std::string &filename) {
     // Constructor:
     build_graph(filename);
+    #define PROMPT "Please input a course: "
 
     // Main menu: 
     bool in_menu = true;
 		while(in_menu) {
-			std::string course, course1; 
+			std::string course; 
 			std::cout << "\n1: Print out the graph\n";
             std::cout << "2: Search for a class\n";
             std::cout << "3: Print all prereqs topologically for a class\n";
@@ -75,30 +77,31 @@ Graph::Graph(const std::string &filename) {
 				std::cout << *this << std::endl;
 				break;
 			case 2:
-				course = read<std::string>(); 
+				course = read<std::string>(PROMPT); 
 				screen_wipe();
                 if(hash.count(course)) {
                     std::cout << list.at(hash.at(course)) << std::endl ;
                 } else COURSE_NOT_FOUND;
 				break;
 			case 3:
-				course = read<std::string>(); 
+				course = read<std::string>(PROMPT); 
 				screen_wipe();
 				if(hash.count(course)) {
 					std::cout << this->print_all_prereqs(course) << std::endl;
 				} else COURSE_NOT_FOUND;
 				break;
 			case 4:
+                std::cout << this->list[23].Serialize() << std::endl;
                 std::cout << "TODO: \n";
 				break;
 			case 5:
-				course = read<std::string>(); 
+				course = read<std::string>(PROMPT); 
 				screen_wipe();
 				std::cout << std::endl;
 				this->print_DFS(course);
 				break;
 			case 6:
-				course = read<std::string>(); 
+				course = read<std::string>(PROMPT); 
 				screen_wipe();
 				std::cout << std::endl;
 				this->print_BFS(course);
@@ -111,6 +114,7 @@ Graph::Graph(const std::string &filename) {
 			}
 		}
 }
+
 //Builds and adds to a graph
 void Graph::build_graph(const std::string &filename) {
     //Build the graph
@@ -143,7 +147,7 @@ void Graph::build_graph(const std::string &filename) {
                 //Skips if the class is repeated it's not a prereq
                 if(hash.count(current_word)) break; 
 
-                Vertex v = {current_word};
+                Vertex v(current_word);
                 list.push_back(v);
                 hash[current_word] = index;
                 index++;
@@ -176,6 +180,7 @@ void Graph::print_DFS(const std::string &course) {
     }
     std::cout << std::endl;
 }
+
 //Recursive function that is called
 void Graph::DFS(std::string course, std::unordered_set<std::string> &check) {
     //Did we vist it?
@@ -216,6 +221,7 @@ std::vector<std::string> Graph::list_all_prereqs(const std::string &course) {
     curr_vertex.topo_cache = retval;
     return retval;
 }
+
 //Helper function to list_all_prereqs
 void Graph::find_prereqs(std::vector<std::string> &retval, const std::string & course, std::unordered_set<std::string> &check) {
     //if this in the hash
@@ -229,25 +235,29 @@ void Graph::find_prereqs(std::vector<std::string> &retval, const std::string & c
     check.insert(course);
     retval.push_back(course);
 }
-//Prints the node and its connections in Breath First Search
+
+
+// This is a BFS using a Stack as a data structure..
+// Prints the node and its connections in Breath First Search
 void Graph::print_BFS(const std::string &course) {
     if(!hash.count(course)) {
         COURSE_NOT_FOUND;
         return;
     }
-    std::unordered_set<std::string> check; 
-    std::stack<std::string> queue; 
+    std::unordered_set<std::string> check;
+    //Stacks are underrated..  
+    std::stack<std::string> stack; 
     check.insert(course);
-    queue.push(course);
+    stack.push(course);
     
-    while (!queue.empty()) {
-        std::string current_course = queue.top();
-        queue.pop();
+    while (!stack.empty()) {
+        std::string current_course = stack.top();
+        stack.pop();
         std::cout << current_course << " ";
         for(std::string s : list.at(hash[current_course]).connections) {
             if(!check.count(s)) {
                 check.insert(s);
-                queue.push(s);
+                stack.push(s);
             }
         }
     }

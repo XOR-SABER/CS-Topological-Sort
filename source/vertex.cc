@@ -13,3 +13,11 @@ std::ostream &operator<<(std::ostream &outs, const Vertex &v) {
     outs << "\n\tPrereq weight : " << v.weight;
     return outs;
 }
+
+std::string Vertex::Serialize() {
+    std::string retval; 
+    retval += name + " ";
+    if(connections.empty()); 
+    else for(const std::string &s : connections) retval += s + " ";
+    return retval;
+}

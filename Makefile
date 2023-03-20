@@ -1,5 +1,5 @@
 CC = g++ 
-CC_FLAGS = -std=c++2a -O3 
+CC_FLAGS = -std=c++2a -O3 -g
 CLS = clear
 SC = source/
 

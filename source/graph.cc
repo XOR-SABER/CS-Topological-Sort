@@ -4,6 +4,12 @@
 #define FILE_NOT_FOUND std::cout << "File not found, exiting program.. \n", exit(0)
 #define COURSE_NOT_FOUND std::cout << "Course not found.. \n"
 
+void test_serialize() {
+    Vertex v;
+    v.Deserialize(std::cin);
+    std::cout << v << std::endl;
+}
+
 //This is for screen clearing, since the command is different on diffetent platforms.
 void screen_wipe(){
 	#if defined __WIN64__ || __WIN32__
@@ -92,7 +98,7 @@ Graph::Graph(const std::string &filename) {
 				break;
 			case 4:
                 std::cout << this->list[23].Serialize() << std::endl;
-                std::cout << "TODO: \n";
+                test_serialize();
 				break;
 			case 5:
 				course = read<std::string>(PROMPT); 
@@ -237,7 +243,33 @@ void Graph::find_prereqs(std::vector<std::string> &retval, const std::string & c
 }
 
 
-// This is a BFS using a Stack as a data structure..
+// // This is a BFS using a Stack as a data structure..
+// // Prints the node and its connections in Breath First Search
+// void Graph::print_BFS(const std::string &course) {
+//     if(!hash.count(course)) {
+//         COURSE_NOT_FOUND;
+//         return;
+//     }
+//     std::unordered_set<std::string> check;
+//     //Stacks are underrated..  
+//     std::stack<std::string> stack; 
+//     check.insert(course);
+//     stack.push(course);
+    
+//     while (!stack.empty()) {
+//         std::string current_course = stack.top();
+//         stack.pop();
+//         std::cout << current_course << " ";
+//         for(std::string s : list.at(hash[current_course]).connections) {
+//             if(!check.count(s)) {
+//                 check.insert(s);
+//                 stack.push(s);
+//             }
+//         }
+//     }
+//     std::cout << std::endl;
+// }
+// This is a BFS using a Queue as a data structure..
 // Prints the node and its connections in Breath First Search
 void Graph::print_BFS(const std::string &course) {
     if(!hash.count(course)) {
@@ -245,19 +277,18 @@ void Graph::print_BFS(const std::string &course) {
         return;
     }
     std::unordered_set<std::string> check;
-    //Stacks are underrated..  
-    std::stack<std::string> stack; 
+    //Lets use a queue
+    std::queue<std::string> queue;
     check.insert(course);
-    stack.push(course);
-    
-    while (!stack.empty()) {
-        std::string current_course = stack.top();
-        stack.pop();
+    queue.push(course); 
+    while (!queue.empty()) {
+        std::string current_course = queue.front();
+        queue.pop();
         std::cout << current_course << " ";
         for(std::string s : list.at(hash[current_course]).connections) {
             if(!check.count(s)) {
                 check.insert(s);
-                stack.push(s);
+                queue.push(s);
             }
         }
     }

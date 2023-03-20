@@ -9,6 +9,7 @@
 #include <sstream>
 #include <cctype>
 #include <stack>
+#include <queue>
 
 // Custom Headers:
 #include "vertex.hpp"

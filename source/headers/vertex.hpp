@@ -12,8 +12,9 @@
 class Vertex : public Serializable{
     public:
     //Name of the class
-    Vertex() = delete; 
+    Vertex() = default;
     Vertex(const std::string &new_name) : name(new_name) {}
+    Vertex(const Vertex& v);
     std::string name;
     std::vector<std::string> connections;
     std::vector<std::string> topo_cache; 
@@ -21,8 +22,8 @@ class Vertex : public Serializable{
     //How common its a preq
     size_t weight = 0;
     size_t total_edge_weight;
-    std::string Serialize();
-    constexpr std::ifstream Deserialize() const; 
+    std::string Serialize() override;
+    void Deserialize(std::istream &input) override;
     friend std::ostream &operator<<(std::ostream &outs, const Vertex &v);
 };
 

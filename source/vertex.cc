@@ -1,5 +1,9 @@
 #include "headers/vertex.hpp"
 
+Vertex::Vertex(const std::string &line) {
+    build_by_string(line);
+}
+
 //Makes my life a little easier
 std::string Vertex::operator[](size_t index) {
     return connections.at(index);
@@ -14,6 +18,10 @@ std::ostream &operator<<(std::ostream &outs, const Vertex &v) {
     return outs;
 }
 
+std::istream& operator>>(std::istream &in, Vertex &v) {
+    return v.Deserialize(in);
+}
+
 std::string Vertex::Serialize() {
     std::string retval; 
     retval += name + " : ";
@@ -22,18 +30,26 @@ std::string Vertex::Serialize() {
     return retval;
 }
 
-void Vertex::Deserialize(std::istream &input) {
+std::istream &Vertex::Deserialize(std::istream &input) {
+    input.ignore();
     std::string input_buffer; 
-    input >> input_buffer;
-    std::cout << input_buffer << std::endl;
-    //Bingo, he has a nameo 
-    this->name = input_buffer;
-    std::cout << *this << std::endl;
     std::getline(input, input_buffer);
-    // FIX:
-    // TODO:
-    std::stringstream sts(input_buffer);
-    std::cout << *this << std::endl;
+    build_by_string(input_buffer);
+    return input;
+}
+
+void Vertex::build_by_string(const std::string &input_string) {
+    std::istringstream sts(input_string);
+    sts >> this->name;
+    while(sts) {
+        std::string temp;
+        sts >> temp;
+        if(!sts) break;
+        // This is for CoReqs 
+        if(temp.back() == '!') temp.pop_back();
+        if(temp == ":") continue;
+        else this->connections.push_back(temp);
+    }
 }
 
 Vertex::Vertex(const Vertex& v) {

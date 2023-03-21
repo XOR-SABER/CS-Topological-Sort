@@ -127,47 +127,25 @@ void Graph::build_graph(const std::string &filename) {
     std::ifstream file(filename);
     if(!file) FILE_NOT_FOUND;
 
-    size_t index = 0;
+    size_t word_index = 0, current_index = 0; 
     while(true) {
         //This loop is for lines
-        bool is_preq = false;
         std::string current_line = readline(file);
-        std::string current_class;
         if(!file) break;
         if(!current_line.size()) continue;
-        std::stringstream sts(current_line);
-        while (true) {
-            size_t word_index;
-            bool is_coreq = false;
-            std::string current_word = read(sts);
-            if(!current_word.size() || !sts) break;
-            if(current_word == ":") {
-                is_preq = true;
-                continue;
-            }
-            if(current_word.back() == '!') {
-                current_word.pop_back();
-                is_coreq = true;
-            }
-            if(!is_preq) {
-                //Skips if the class is repeated it's not a prereq
-                if(hash.count(current_word)) break; 
-
-                Vertex v(current_word);
-                list.push_back(v);
-                hash[current_word] = index;
-                index++;
-                current_class = current_word;
-            } else {
-                //Check if the word exists
-                if(hash.count(current_word)) {
-                    word_index = hash[current_word];
-                    list[word_index].weight++;
-                }
-
-                word_index = hash[current_class];
-                list[word_index].connections.push_back(current_word);
-            }
+        Vertex v(current_line);
+        list.push_back(v);
+        hash[v.name] = current_index;
+        current_index++;
+        for(const std::string &s : v.connections)
+        {
+            //If it exists then get the word index and add weight to the edge
+            if(hash.count(s)) {
+                word_index = hash[s];
+                list[word_index].weight++;
+            } 
+            // Reset the word index 
+            word_index = hash[v.name];
         }
     }
 }
@@ -201,9 +179,9 @@ void Graph::DFS(std::string course, std::unordered_set<std::string> &check) {
 
 // Returns a formated string with all the prereqs
 std::string Graph::print_all_prereqs(const std::string &course) {
-    std::vector<std::string> list = list_all_prereqs(course);
+    std::vector<std::string> vec = list_all_prereqs(course);
     std::string retval;
-    format_str_arrow(list, retval);
+    format_str_arrow(vec, retval);
     retval += course;
     return retval;
 }
@@ -242,33 +220,6 @@ void Graph::find_prereqs(std::vector<std::string> &retval, const std::string & c
     retval.push_back(course);
 }
 
-
-// // This is a BFS using a Stack as a data structure..
-// // Prints the node and its connections in Breath First Search
-// void Graph::print_BFS(const std::string &course) {
-//     if(!hash.count(course)) {
-//         COURSE_NOT_FOUND;
-//         return;
-//     }
-//     std::unordered_set<std::string> check;
-//     //Stacks are underrated..  
-//     std::stack<std::string> stack; 
-//     check.insert(course);
-//     stack.push(course);
-    
-//     while (!stack.empty()) {
-//         std::string current_course = stack.top();
-//         stack.pop();
-//         std::cout << current_course << " ";
-//         for(std::string s : list.at(hash[current_course]).connections) {
-//             if(!check.count(s)) {
-//                 check.insert(s);
-//                 stack.push(s);
-//             }
-//         }
-//     }
-//     std::cout << std::endl;
-// }
 // This is a BFS using a Queue as a data structure..
 // Prints the node and its connections in Breath First Search
 void Graph::print_BFS(const std::string &course) {

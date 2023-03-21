@@ -8,7 +8,7 @@
 // I might use this.. 
 struct Serializable { 
     virtual std::string Serialize() = 0; 
-    virtual void Deserialize(std::istream& input) = 0; 
+    virtual std::istream& Deserialize(std::istream& input) = 0; 
 };
 
 #endif

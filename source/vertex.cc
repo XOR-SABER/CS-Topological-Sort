@@ -1,5 +1,6 @@
 #include "headers/vertex.hpp"
 
+//This should be gone by the time, I give graph a serialize function.. 
 Vertex::Vertex(const std::string &line) {
     build_by_string(line);
 }

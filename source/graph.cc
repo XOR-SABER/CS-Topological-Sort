@@ -99,6 +99,7 @@ Graph::Graph(const std::string &filename) {
 			case 4:
                 std::cout << this->list[23].Serialize() << std::endl;
                 test_serialize();
+                std::cout << Serialize() << std::endl;
 				break;
 			case 5:
 				course = read<std::string>(PROMPT); 
@@ -244,4 +245,17 @@ void Graph::print_BFS(const std::string &course) {
         }
     }
     std::cout << std::endl;
+}
+
+std::string Graph::Serialize() {
+    std::string retval; 
+    for(Vertex& v : list) {
+        retval += v.Serialize();
+        retval += '\n';
+    }
+    return retval;
+}
+std::istream& Graph::Deserialize(std::istream& input) {
+    //TODO: 
+    return input;
 }

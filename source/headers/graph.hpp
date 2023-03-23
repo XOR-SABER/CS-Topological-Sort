@@ -15,7 +15,7 @@
 #include "vertex.hpp"
 #include "read.h"
 
-class Graph{
+class Graph : public Serializable{
     private:
         std::vector<Vertex> list; //This is very simular to the Markov.. 
         std::unordered_map<std::string, size_t> hash; //This map, is used to speed up query times, to a O(1)
@@ -41,6 +41,8 @@ class Graph{
         // This is the topological sorting.. 
         std::vector<std::string> list_all_prereqs(const std::string &);
         // Overload to print out the graph
+        std::string Serialize();
+        std::istream& Deserialize(std::istream& input);
         friend std::ostream &operator<<(std::ostream&, const Graph&);
 };
 

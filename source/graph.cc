@@ -1,4 +1,4 @@
-#include "headers/Graph.hpp"
+#include "headers/graph.hpp"
 
 //Just a neat macro set up for file not
 #define FILE_NOT_FOUND std::cout << "File not found, exiting program.. \n", exit(0)

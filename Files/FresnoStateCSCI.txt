@@ -1,0 +1,373 @@
+Computer Science
+CSCI 1. Critical Thinking and Computer Science
+Prerequisite: 
+Overview of the field of computer science with an emphasis on critical thinking skills. Problem-solving strategies, algorithm design, and data abstraction. Introduction to hardware, theoretical limitations of computers, and issues arising from the growing role of computers in society. G.E. Foundation A3.
+
+Units: 3
+Course Typically Offered: Fall, Spring
+GE Area: A3
+CSCI 40. Introduction to Programming and Problem Solving
+
+Prerequisites: Math 75!
+Introduction to problem solving, algorithm development, procedural and data abstraction; program design, coding, debugging, testing and documentation; a high-level programming language. (3 lecture, 2 lab hours)
+
+Units: 4
+Course Typically Offered: Fall, Spring
+CSCI 41. Introduction to Data Structures
+
+Prerequisite: CSCI 40
+Programming methodology, program correctness. Review of data types. Data structures: linear and nonlinear structures, files. Implementation of data structures. Recursion. Searching and sorting. (3 lecture, 2 lab hours)
+
+Units: 4
+Course Typically Offered: Fall, Spring
+CSCI 60. Foundations of Computer Science
+
+Prerequisites: CSCI 40! 
+Abstraction, iteration, induction, recursion, complexity of programs, data models, and logic. (3 lecture hours)
+
+Units: 3
+Course Typically Offered: Fall, Spring
+
+CSCI 80. Introduction to Computer Systems
+
+Prerequisite: CSCI 40, CSCI 60
+Computer arithmetic. Von Neumann architecture. Instruction sets, data types, formats, addressing. Register and ALU organization. Memory hierarchy. I/O Bus organization. Study of one or more assembly languages. Basics of implementation of higher-level languages. (3 lecture hours)
+
+Units: 3
+Course Typically Offered: Fall, Spring
+
+CSCI 113. Introduction to Computer Organization
+
+Prerequisite: CSCI 112
+Fundamental issues of computer design at register-transfer level. Logical design of basic combinational and sequential modules. Organization and design of major functional blocks: ALU, CPU, memory, cache, input/output, hard-wired and microprogrammed control. Simulation of computer organization. INtroduction to high performance superscalar computer organization. (3 lecture, 2 lab hours)
+
+Units: 4
+Course Typically Offered: Fall, Spring
+CSCI 114. Introduction to Operating Systems
+
+Prerequisites: CSCI 41, CSCI 112
+Operating system history and services. File systems. Memory management. Process management - concurrent processes, communication, semaphores, monitors, deadlocks. Resource management - processor and disk scheduling. Security and protection mechanisms. (Formerly CSCI 144)
+
+Units: 3
+Course Typically Offered: Fall, Spring
+CSCI 115. Algorithms and Data Structures
+
+Prerequisites: CSCI 41, CSCI 60, MATH 75. 
+Review of basic data structures. Graph, search paths, and spanning trees. Algorithm design and analysis of sorting, merging, and searching. Memory management, hashing, dynamic storage allocation. Integration of data structures into system design. (3 lecture 2 lab hours)
+
+Units: 4
+Course Typically Offered: Fall, Spring
+CSCI 117. Structures of Programming Languages
+
+Prerequisites: CSCI 41, and CSCI 60. General concepts and paradigms of programming languages; scope and binding rules, applications and implementations of language concepts. Languages selected from: ADA, ICON, Miranda, ML, MODULA 2, OCCAM 2, PROLOG, LISP, Scheme, Smalltalk. (3 lecture, 2 lab hours)
+
+Units: 4
+Course Typically Offered: Fall, Spring
+CSCI 119. Introduction to Formal Languages and Automata
+
+Prerequisites: CSCI 41, CSCI 60. Strings, languages, and fundamental proof techniques. Regular expressions, finite automata, and their properties, constructions, and relationships. Introduction to context-free languages and Turing Machines. (3 lecture hours)
+
+Units: 3
+Course Typically Offered: Fall, Spring
+CSCI 124. Introduction to File Processing
+
+Prerequisite: CSCI 115. Definition of file components, access methods, and file operations. Algorithms for efficient implementation of data structures; characteristics of bulk storage media for mainframe and microcomputers. Introduction to database management systems.
+
+Units: 3
+CSCI 126. Database Systems
+
+Prerequisites: CSCI 115 (can be taken concurrently). Database concepts; hierarchical and relational network models; object-oriented data models. Data normalization, data description languages, data manipulation languages, and query design.
+
+Units: 3
+Course Typically Offered: Spring
+CSCI 130. Web Programming
+
+Prerequisites: CSCI 115. Programming for the World Wide Web. Web servers and clients, Internet and Web protocols, and mark-up languages. Client side scripting, including both gateway and filter-based approaches. (2 lecture, 2 lab hours). (Formerly CSCI 191T).
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 134. Compiler Design
+
+Prerequisites: CSCI 112, CSCI 115, CSCI 119. Syntax and semantics of programming languages. Lexical analysis, parsing techniques, parser generator, SLR and LALR parsing. Introduction to symbol table organization and semantic routines. Compiler generators.
+
+Units: 3
+CSCI 146. Systems Architecture
+
+Prerequisites: CSCI 113, CSCI 144. An in-depth analysis of one or more operating systems -- system data structures, hardware architecture, shell and kernel functions, I/O routines, interrupt handling. Other topics may include parallel hardware architectures, performance analysis.
+
+Units: 3
+CSCI 148. Systems Programming
+
+Prerequisites: CSCI 113, CSCI 144. Topics include implementation of operating system components and modification of existing systems. Device drivers, memory management, communication networks, and file systems will be examined. Projects will be emphasized.
+
+Units: 3
+CSCI 150. Introduction to Software Engineering
+
+Prerequisite: CSCI 41. History, goals, and motivation of software engineering. Study and use of software engineering methods. Requirements, specification, design, implementation, testing, verification, and maintenance of large software systems. Team programming. (2 lecture, 3 lab hours)
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 152E. Software Engineering
+
+Prerequisite: CSCI 150. In-depth examination of techniques for specification, design, implementation, testing, and verification of software. Human-computer interfaces. Formal methods of software development. Use of software engineering tools for the development of substantial software projects. (2 lecture, 2 lab hours)
+
+Units: 3
+Course Typically Offered: Spring
+CSCI 154. Simulation
+
+Prerequisites: CSCI 41, CSCI 60; MATH 75. Simulation as a tool for the study of complex systems in computer science, statistics and operations research. Generating random variables. Review of principles behind and examples of simulation languages.
+
+Units: 3
+Course Typically Offered: Spring
+CSCI 156. Internetworking Systems and Protocols
+
+Prerequisite: CSCI 114 (may be taken concurrently) or permission of instructor. Review of underlying network technologies. Application-level interconnections, network architectures, addressing, mapping abstract addresses to physical addresses, routing datagrams, error and control messages, protocol layering, gateways, subnets. Client-server interactions. Upper layers of protocol stacks.
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 164. Artificial Intelligence Programming
+
+Prerequisite: CSCI 117. Introduction to problem-solving methods from artificial intelligence. Production systems. Knowledge-based systems. Machine learning. Topics chosen from fuzzy logic, neural network models, genetic algorithms. Verification, validation, testing.
+
+Units: 3
+Course Typically Offered: Spring
+CSCI 166. Principles of Artificial Intelligence
+
+Prerequisite: CSCI 164. Analysis of knowledge-based and neural models, including self-organization, sequential learning models, neurally inspired models of reasoning and perception. Integration of different paradigms.
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 167. Introduction to Deep Learning
+
+Prerequisite: CSCI 115 or permission of instructor. An overview of concepts, techniques, and algorithms in machine learning with special attention to concepts underlying modern deep learning. Fundamental concepts, techniques, and algorithms, including logistic regression, backpropagation, diminishing gradients issue, batch normalization, residual networks, convolutional networks, recurrent networks and their implementation. Hands-on experience through machine learning experiments using popular learning frameworks.
+
+Units: 3
+CSCI 168E. Big Data Analytics
+
+Prerequisites: MATH 75; CSCI 115; CSCI 164 (co-requisite) or permission of instructor. Introduction to data mining and knowledge discovery process, big data fundamentals, Map-Reduce: Map and Reduce procedures, dimensionality reduction: Singular Value Decomposition and low-rank approximation, frequent itemsets and association rules, recommender systems: similarity search, spam detection, and mining data streams. (2 lecture, 2 lab hours) (Formerly CSCI 191T)
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 172. Computer Graphics
+
+Prerequisites: MATH 76, CSCI 41, and (CSCI 112 or ECE 118). Hardware devices, raster graphics, device in dependence, graphic data structure and representations, interactive techniques, and algorithms for the display of two- and three-dimensional objects, graphic transformation, graphics standards, modeling ,animation, VRML, and scientific visualization. (3 lecture hours)
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 173. Advanced Computer Graphics
+
+Prerequisite: CSCI 172. Visible surface algorithms, lighting and shading, textures, curves and surfaces, computer-aided design, advanced modeling techniques, solid modeling, advanced raster graphics architecture, advanced geometric and raster algorithms, user interface, ray tracing, animation techniques, and fractals. (2 lecture, 2 lab hours)
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 174. Design and Analysis of Algorithms
+
+Prerequisites: CSCI 115, CSCI 119. Models of computation and measures of complexity, algorithms for sorting and searching, set representation and manipulation, branch and bound, integer and polynomial arithmetic, pattern-matching algorithms, parsing algorithm, graph algorithm, NP-complete problems.
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 176. Parallel Processing
+
+Prerequisites: CSCI 113, CSCI 144. Characteristics, and classification of computer systems. Notion and realization of parallelism. Pipeline design techniques. Vector processing. Array processing. Multiprocessing. Multiprocessing vs. multicomputers. Shared memory vs message-passing, problem solving and parallel programming. Architectural trends.
+
+Units: 3
+Course Typically Offered: Spring
+CSCI 177. Distributed Computer Systems
+
+Prerequisites: CSCI 113, CSCI 144. Characteristics and design of distributed systems. Application and network interconnectivity. Enterprise computing. Distributed data and transaction management. Distributed operating systems. Distributed problem solving and programming.
+
+Units: 3
+CSCI 178. Game Development
+
+Prerequisite: CSCI 115 and (CSCI 172 or permission of instructor). The aim of this course is to familiarize students with programing and development of game engine concepts including rendering, 2D graphics, shaders, animation, state machines, object management, sound input pseudorandom number generators, rule-based Al, scripted level generation, time-based coding, event driven coding, and debuggers. This course is being taught using code for a simple billboard 2D game with constrained camera motion. (Formerly CSCI 191T)
+
+Units: 3
+Course Typically Offered: Spring
+CSCI 186. Formal Languages and Automata
+
+Prerequisite: CSCI 119. Introduction to formal language theory. Context-free grammars, context-sensitive grammars, unrestricted grammars; properties of context-free languages, push-down automata.
+
+Units: 3
+CSCI 188. Introduction to Computability
+
+Prerequisite: CSCI 119. Introduction to computability and complexity. Turing machines, recursive functions, reduction, undecidability, classes P and NP, and intractable problems.
+
+Units: 3
+CSCI 190. Independent Study
+
+See Academic Placement. Approved for SP grading.
+
+Units: 1-3, Repeatable up to 6 units
+CSCI 191T. Introduction to Bioinformatics Computing
+
+Prerequisite: CSCI 115, any Biology GE course or permission of instructor. Computational and algorithmic approaches in bioinformatics. Biological sequence alignment algorithms and heuristics. Study of bioinformatics tools. Combinatorial pattern matching, Motif finding, Gene prediction, Gene expression measurement, High throughput sequencing technologies and data analysis methodologies in molecular and micro-biology. Selected topics from current research. This topic may not be repeated for credit. (Offered Fall 2023)
+
+Units: 3
+CSCI 191T. Applied Biometric Security
+
+Prerequisite: CSCI 115 or permission of instructor. This course focuses on applied security systems & biometrics. It covers principles of biometrics, the pattern recognition nature of biometric systems & discusses different forms of biometrics, such as fingerprint, face, gait, keystroke etc. Topics include feature extraction & implementation of authentication systems for biometric data. The course includes performance evaluation of biometrics systems, spoofing attacks of biometrics & spoof prevention methods. Some foundational classifiers, their use & vulnerability in biometric systems. This topic may not be repeated for credit. (Offered Fall 2023)
+
+Units: 3
+CSCI 191T. Computer Security
+
+Prerequisite: CSCI 115 and basic knowledge of Operating Systems and Network Programming. This course focuses on selected Cyber Security topics with emphasis on Operating systems security, Network security and Implementation of Attacks and Countermeasures. Topics include access control, vulnerabilities from malicious code, firewalls and intrusion detection, cryptography, secure engineering and programming principles. This topic may not be repeated for credit. (Offered Fall 2023)
+
+Units: 3
+CSCI 191T. Topics in Computer Science
+
+Prerequisite: CSCI 115 or permission of instructor. Special topics in computer science of current interest and importance.
+
+Units: 3, Repeatable up to 9 units
+CSCI 194I. Cooperative Education
+
+Prerequisites: courses appropriate to the work experience; approval by major department cooperative education coordinator. Integration of work experience with academic program, individually planned through coordinator. CR/NC grading only.
+
+Units: 1-4, Repeatable up to 8 units
+CSCI 195I. Computer Science Internship
+
+Prerequisite: Senior standing in Computer Science or permission of instructor and approved subject. Demonstrate the depth and breadth of Computer Science through internship experience under the supervision of the department. Presentation by the student in a seminar setting and a final report are upon the agreement with the internship provider. Satisfies the senior major requirement for the B.S. in Computer Science. Approved for RP grading.
+
+Units: 3, Repeatable up to 6 units
+CSCI 196S. Computer Science Service-Learning Senior Project
+
+Prerequisite: Senior standing in computer science or permission of instructor. Demonstrate the depth and breadth of Computer Science through service-learning project(s) to expand the professional experience of Computer Science students and broaden the contribution and benefit of community members. Presentation by the student in a seminar setting and a final report are required. Satisfies the senior major requirement for the B.S. in Computer Science. Approved for RP grading.
+
+Units: 3, Repeatable up to 6 units
+Course Typically Offered: Fall, Spring
+CSCI 198. Project
+
+Prerequisite: senior standing in computer science or permission of instructor and approved subject. Study of a problem under the supervision of a faculty member. Presentation by the student in a seminar setting and a final report are required. Satisfies the senior major requirement for the B.S. in Computer Science. Approved for RP grading.
+
+Units: 3
+Course Typically Offered: Fall, Spring
+CSCI 200. Introduction to Research in Computer Science
+
+Prerequisite: classified standing in computer science. Orientation to the graduate program, introduction to research methodology, and discussion of possible project and thesis topics.
+
+Units: 1
+Course Typically Offered: Fall, Spring
+CSCI 201. CSCI Colloquium
+
+Prerequisite: CSCI 200 or permission by graduate coordinator. Colloquium in recent research in Computer Science. Students read, analyze, present, and discuss papers of recent research topics in Computer Science.
+
+Units: 2
+Course Typically Offered: Fall, Spring
+CSCI 213. Computer Organization
+
+Prerequisites: CSCI 112 and CSCI 113 or permission of instructor. Organization of memory, I/O, and processors. Computer busses. Microprogramming and instruction execution. Interrupts. Data communications.
+
+Units: 3
+CSCI 217. Programming Language Principles
+
+Prerequisite: CSCI 117 or permission of instructor. Advanced topics in programming languages: concurrency, exceptions, types, procedures, execution models. Introduction to the formal specification of programming languages: syntax specification, semantic specification.
+
+Units: 3
+Course Typically Offered: Spring
+CSCI 226. Advanced Database Systems
+
+Prerequisites: CSCI 126 and CSCI 144. Implementation of database systems on modern hardware systems. Operating system design issues, including buffering, page size, prefetching, etc. Query processing algorithms; design of crash recovery and concurrency control.
+
+Units: 3
+CSCI 230. Advanced Web Application Development
+
+Prerequisite: CSCI 130 or permission of instructor. Application development for the World-Wide Web. Three-tier architecture; authentication, capability, and session management; versioning and open-source development. Case studies and project work. (Formerly CSCI 291T)
+
+Units: 3
+CSCI 244. Operating Systems
+
+Prerequisite: CSCI 144. Operating system functions. Performance monitoring and fine-tuning. Network operating system design. Concurrency, analysis of deadlock. Selected topics from current research.
+
+Units: 3
+CSCI 246. Computer Architecture
+
+Prerequisite: CSCI 144 or permission of instructor. Contemporary computer architectures. Pipelined, superscalar, shared and distributed memory, multicore and embedded systems. Memory hierarchy, computer arithmetic, interconnection networks. Selected topics from current research.
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 250. Advanced Software Engineering
+
+Prerequisite: CSCI 150 or permission of instructor. Theoretical and practical aspects of software engineering emphasizing requirements analysis, specification, design, coding, testing, correctness, maintenance, and management. Examination of reliability, performance, and software metrics.
+
+Units: 3
+CSCI 252. Software Development and Environments
+
+Prerequisite: CSCI 150 or permission of instructor. Overview of advanced and state-of-the-practice software engineering methodologies and techniques for software development, software environments, software verification, software planning, or cost estimation. Selected topics from current research.
+
+Units: 3
+CSCI 253. Human-Computer Interaction
+
+Prerequisite: CSCI 150 or permission of instructor. Software engineering approach to human-computer interaction. Design, evaluation, and implementation of user interfaces and experiences. Modeling, prototyping, inspection, and usability testing. Relationship of user interface characteristics to attention, errors, and efficiency.
+
+Units: 3
+CSCI 256. Wireless Communications and Mobile Computing
+
+Prerequisite: CSCI 156. Review of basic wireless communication concepts, protocols, and architectures. Study of IEEE 802.11 based wireless LANs, wireless mobile ad hoc networks, wireless sensor networks, and wireless mesh networks. Mobile IP and cellular networks. (Formerly CSCI 291T)
+
+Units: 3
+CSCI 264. Artificial Intelligence
+
+Prerequisite: CSCI 164 or ability to program in Lisp and Prolog. Software technology for artificial intelligence systems, including expert systems. Knowledge- based and rule-based systems. Explanation and learning. User-oriented interfaces.
+
+Units: 3
+CSCI 265. Reinforcement Learning
+
+Prerequisite: CSCI 115 or permission of instructor. This course covers the concepts and current trends in reinforcement learning, including the theory of Markov decision processes, dynamic programming, temporal difference learning, Monte Carlo methods, and the role of function approximation. (Formerly CSCI 291T)
+
+Units: 3
+Course Typically Offered: Fall
+CSCI 272. Computer Graphics
+
+Prerequisite: CSCI 172 or permission of instructor. 3-D transformations, visible surface algorithms, shading, textures, curves and surfaces, computer-aided design, advanced modeling techniques, solid modeling, advanced raster graphics architecture, advanced geometric and raster algorithms, user interface, ray tracing, animation techniques, and fractals.
+
+Units: 3
+CSCI 274. Combinatorial Algorithms
+
+Prerequisite: CSCI 174. Design and analysis of efficient algorithms for combinatorial problems. Network flow theory, matching theory, augmenting-path algorithms, branch-and-bound algorithms, data structure techniques for efficient implementation of combinatorial algorithms, analysis of data structures, application of data structural techniques to sorting, searching, and geometric problems.
+
+Units: 3
+CSCI 282. Theory of Computation
+
+Prerequisite: CSCI 188 or permission of instructor. General models of computation, recursive functions, undecidable problems, propositional calculus, predicate calculus, complexity classes, NP-complete problems.
+
+Units: 3
+CSCI 284. Automata Theory
+
+Prerequisite: CSCI 186 or permission of instructor. Formal Languages, abstract machines, algebraic approach to automata, term rewriting systems, formal power series, cryptography, parallel computation.
+
+Units: 3
+CSCI 290. Independent Study
+
+Prerequisite: approval of department. See Academic Placement. Approved for SP grading.
+
+Units: 1-3, Repeatable up to 6 units
+CSCI 291T. Seminar
+
+Prerequisite: approval of instructor. Special topics in computer science of current interest and importance.
+
+Units: 1-3, Repeatable up to 9 units
+CSCI 297. Grad Synthesis
+
+Prerequisite: Advancement to Candidacy and CSCI 201. A synthesis of selected areas in Computer Science, culminating in comprehensive exam covering these areas.
+
+Units: 3
+Course Typically Offered: Fall, Spring
+CSCI 298. Research Project
+
+Prerequisite: advancement to candidacy and CSCI 201 See Criteria of Thesis and Project. Independent investigation of an advanced topic as the culminating requirement for the master's degree. Approved for RP grading.
+
+Units: 3
+CSCI 298C. Project Continuation
+
+Pre-requisite: Project CSCI 298. For continuous enrollment while completing the project. May enroll twice with department approval. Additional enrollments must be approved by the Dean of Graduate Studies.
+
+Units: 0
+CSCI 299. Master's Thesis
+
+Prerequisite: advancement to candidacy and CSCI 201. See. Criteria for Thesis and Project. Preparation, completion, and submission of an acceptable thesis for the master's degree. Approved for RP grading.
+
+Units: 3-6
+CSCI 299C. Thesis Continuation
+
+Pre-requisite: Thesis CSCI 299. For continuous enrollment while completing the thesis. May enroll twice with department approval. Additional enrollments must be approved by the Dean of Graduate Studies.
+
+Units: 0

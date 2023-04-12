@@ -41,8 +41,8 @@ class Graph : public Serializable{
         // This is the topological sorting.. 
         std::vector<std::string> list_all_prereqs(const std::string &);
         // Overload to print out the graph
-        std::string Serialize();
-        std::istream& Deserialize(std::istream& input);
+        std::string Serialize() override;
+        std::istream& Deserialize(std::istream& input) override;
         friend std::ostream &operator<<(std::ostream&, const Graph&);
 };
 

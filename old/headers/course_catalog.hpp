@@ -26,7 +26,8 @@ struct Course : public Formatable{
 
 class Catalog : public Formatable {
 private:
-    std::unordered_map<std::string, Course> hash_map;
+    std::unordered_map<std::string, size_t> hash_map;
+    std::vector<Course> course_list; 
 public:
     // No default, since no file to build from.. 
     Catalog() = delete;

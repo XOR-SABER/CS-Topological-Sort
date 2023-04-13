@@ -104,26 +104,26 @@ Prerequisite: CST 238, MATH 130
 Units: 4
 
 CST 383 Introduction to Data Science
-In data science, data analysis and machine learning techniques are applied to visualize data, understand trends, and make predictions. In this course students will learn how to obtain data, preprocess it, apply machine learning methods, and visualize the results. A student who completes the course will have enough theoretical knowledge, and enough skill with modern statistical programming languages and their libraries,to define and perform complete data science projects.
 Prerequisite: CST 238
+In data science, data analysis and machine learning techniques are applied to visualize data, understand trends, and make predictions. In this course students will learn how to obtain data, preprocess it, apply machine learning methods, and visualize the results. A student who completes the course will have enough theoretical knowledge, and enough skill with modern statistical programming languages and their libraries,to define and perform complete data science projects.
 Units: 4
 
 CST 438 Software Engineering
-Prepares students for large-scale software development using software engineering principles and techniques. Coverage includes software process, requirements analysis and specification, software design, implementation, testing, and project management. Students are expected to work in teams to carry out a realistic software project.
 Prerequisite: CST 338
+Prepares students for large-scale software development using software engineering principles and techniques. Coverage includes software process, requirements analysis and specification, software design, implementation, testing, and project management. Students are expected to work in teams to carry out a realistic software project.
 Units: 4
 
 CST 412 Network Administration
-Introduces management tools, skills, and information to design, implement, and manage telecommunications and data communications networks. Includes network design, monitoring, and security.
 Prerequisite: CST 311
+Introduces management tools, skills, and information to design, implement, and manage telecommunications and data communications networks. Includes network design, monitoring, and security.
 Units: 4
 
 CST 426 Advanced Game Development
-This course provides students with advanced game development skills. Students will learn how to develop procedural content generation techniques for various platforms, and advanced game input techniques . Students will also learn how to apply gamification technique to serious games development. Additionaly, the course discusses ethical considerations in game development, develops interpersonal and oral communication skills, and game design document writing. 
 Prerequisite: CST 325
+This course provides students with advanced game development skills. Students will learn how to develop procedural content generation techniques for various platforms, and advanced game input techniques . Students will also learn how to apply gamification technique to serious games development. Additionaly, the course discusses ethical considerations in game development, develops interpersonal and oral communication skills, and game design document writing. 
 Units: 4
 
 CST 463 Advanced Machine Learning
-In this course students learn to use advanced machine learning methods and big data technologies. The advanced machine learning methods include support vector machines, ensemble methods, probabilistic graph models, neural nets, and methods for working with time series data. The big data technologies support machine learning through the distributed processing of large data sets on a computing cluster.
 Prerequisite: CST 383
+In this course students learn to use advanced machine learning methods and big data technologies. The advanced machine learning methods include support vector machines, ensemble methods, probabilistic graph models, neural nets, and methods for working with time series data. The big data technologies support machine learning through the distributed processing of large data sets on a computing cluster.
 Units: 4

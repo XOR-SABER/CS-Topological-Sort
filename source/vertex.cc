@@ -23,7 +23,7 @@ std::istream& operator>>(std::istream &in, Vertex &v) {
     return v.Deserialize(in);
 }
 
-std::string Vertex::Serialize() {
+std::string Vertex::Format_string() {
     std::string retval; 
     retval += name + " : ";
     if(connections.empty()); 

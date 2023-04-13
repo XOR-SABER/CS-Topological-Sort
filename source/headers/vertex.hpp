@@ -10,7 +10,7 @@
 //Custom headers
 #include "serialize.hpp"
 
-struct Vertex : public Serializable{
+struct Vertex : public Serializable {
     Vertex() = default;
     Vertex(const std::string &line);
     Vertex(const Vertex& v);
@@ -23,7 +23,7 @@ struct Vertex : public Serializable{
     void build_by_string(const std::string &); 
     // OK, this is the first time I actually used a pure virtual function to do serialization..
     //Returns a formatted string, with all the info nessecary to remake the class 
-    std::string Serialize() override;
+    std::string Format_string() override;
     //It's a input overload function, that does the Deserialization in a seperate function
     std::istream &Deserialize(std::istream &) override;
     //Operator overloads.. 

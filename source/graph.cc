@@ -97,9 +97,9 @@ Graph::Graph(const std::string &filename) {
 				} else COURSE_NOT_FOUND;
 				break;
 			case 4:
-                std::cout << this->list[23].Serialize() << std::endl;
+                std::cout << this->list[23].Format_string() << std::endl;
                 test_serialize();
-                std::cout << Serialize() << std::endl;
+                std::cout << Format_string() << std::endl;
 				break;
 			case 5:
 				course = read<std::string>(PROMPT); 
@@ -247,15 +247,11 @@ void Graph::print_BFS(const std::string &course) {
     std::cout << std::endl;
 }
 
-std::string Graph::Serialize() {
+std::string Graph::Format_string() {
     std::string retval; 
     for(Vertex& v : list) {
-        retval += v.Serialize();
+        retval += v.Format_string();
         retval += '\n';
     }
     return retval;
-}
-std::istream& Graph::Deserialize(std::istream& input) {
-    //TODO: 
-    return input;
 }

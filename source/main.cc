@@ -1,4 +1,4 @@
-#include "headers/graph.hpp"
+#include "headers/course_catalog.hpp"
 
 /*
 Todo list: 
@@ -12,6 +12,9 @@ Todo list:
 using namespace std;
 
 int main() {
-    Graph current_graph("Graphs/fresnoStateCSCI.dat");
+    //Create the catalog.. 
+    Catalog course_catalog("Files/FresnoStateCSCI.txt");
+    //Okay this works.. 
+    //Graph current_graph("Graphs/fresnoStateCSCI.dat");
     return 0;
 }

@@ -4,12 +4,12 @@ Functions, graphs, limits, continuity, derivatives and applications, definite an
 Units: 4
 
 MATH 76. Calculus II
-Prerequisite: MATH 75
+Prerequisites: MATH 75
 Techniques and applications of integration, improper integrals, conic sections, polar coordinates, infinite series. (3 lecture, 2 activity hours)
 Units: 4
 
 CSCI 1. Critical Thinking and Computer Science
-Prerequisite: 
+Prerequisites: 
 Overview of the field of computer science with an emphasis on critical thinking skills. Problem-solving strategies, algorithm design, and data abstraction. Introduction to hardware, theoretical limitations of computers, and issues arising from the growing role of computers in society. G.E. Foundation A3.
 Units: 3
 
@@ -19,7 +19,7 @@ Introduction to problem solving, algorithm development, procedural and data abst
 Units: 4
 
 CSCI 41. Introduction to Data Structures
-Prerequisite: CSCI 40
+Prerequisites: CSCI 40
 Programming methodology, program correctness. Review of data types. Data structures: linear and nonlinear structures, files. Implementation of data structures. Recursion. Searching and sorting. (3 lecture, 2 lab hours)
 Units: 4
 
@@ -29,7 +29,7 @@ Abstraction, iteration, induction, recursion, complexity of programs, data model
 Units: 3
 
 CSCI 80. Introduction to Computer Systems
-Prerequisite: CSCI 40, CSCI 60
+Prerequisites: CSCI 40, CSCI 60
 Computer arithmetic. Von Neumann architecture. Instruction sets, data types, formats, addressing. Register and ALU organization. Memory hierarchy. I/O Bus organization. Study of one or more assembly languages. Basics of implementation of higher-level languages. (3 lecture hours)
 Units: 3
 
@@ -319,7 +319,7 @@ See Criteria of Thesis and Project. Independent investigation of an advanced top
 Units: 3
 
 CSCI 298C. Project Continuation
-Pre-requisite: CSCI 298
+Prerequisite: CSCI 298
 For continuous enrollment while completing the project. May enroll twice with department approval. Additional enrollments must be approved by the Dean of Graduate Studies.
 Units: 0
 
@@ -329,6 +329,6 @@ See. Criteria for Thesis and Project. Preparation, completion, and submission of
 Units: 3-6
 
 CSCI 299C. Thesis Continuation
-Pre-requisite: CSCI 299
+Prerequisite: CSCI 299
 For continuous enrollment while completing the thesis. May enroll twice with department approval. Additional enrollments must be approved by the Dean of Graduate Studies.
 Units: 0

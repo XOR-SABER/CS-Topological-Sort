@@ -1,129 +1,129 @@
-MATH 130 Precalculus
-Functions and graphs, including polynomial, rational, exponential, logarithmic, and trigonometric functions. Applications, data analysis, mathematical modeling, and analytic trigonometry.
+MATH-130 Precalculus
 Prerequisite:
+Functions and graphs, including polynomial, rational, exponential, logarithmic, and trigonometric functions. Applications, data analysis, mathematical modeling, and analytic trigonometry.
 Units: 5
 
-MATH 150 Calculus I
+MATH-150 Calculus I
+Prerequisite: MATH-130
 Includes limits, continuity, derivatives including trigonometric functions, chain rule, curve sketching, extremum problems, implicit differentiation, related rates, Mean Value Theorem, logarithmic and trigonometric functions, introduction to integration, fundamental theorem of calculus, substitution, and applications.
-Prerequisite: MATH 130
 Units: 4
 
-MATH 151 Calculus II
+MATH-151 Calculus II
+Prerequisite: MATH-150
 Includes the calculus of exponential and logarithmic functions, trigonometric and inverse trigonometric functions, techniques of integration, separable differential equations, Taylor polynomials, L’Hôpital’s rule, improper integrals, series, and introduction to partial derivatives.
-Prerequisite: MATH 150
 Units: 4
 
-MATH 170 Discrete Mathematics
+MATH-170 Discrete Mathematics
+Prerequisite: MATH-130
 Includes sets and sequences, elementary logic, relations, induction, counting principles, discrete probability, Boolean algebra, logic networks, matrices, graph theory, and trees. Applies these topics to real life and branches of science, particularly computer science.
-Prerequisite: MATH 130
 Units: 4
 
-MATH 270 Mathematics for Computing
+MATH-270 Mathematics for Computing
+Prerequisite: MATH-150, MATH-170
 This course covers basic linear algebra, continuous and discrete probability, and a continuation of elementary discrete mathematics. It emphasizes mathematical theory as well as applicable methods. Topics include systems of linear equations, matrices, determinants, vector spaces, conditional probability, distributions and densities, expected value, functions of random variables, automata, and algorithmic complexity.
-Prerequisite: MATH 150, MATH 170
 Units: 4
 
-CST 231 Problm-Solving/Programng
+CST-231 Problm-Solving/Programng
+Prerequisite:
 This is an introductory programming course to develop problem-solving techniques for numerical and non-numerical problems from various disciplines. Students will design the solution to each problem and implement it in the C++ programming language. Coverage includes introduction to computer system, C++ basics, flow control, functions, I/O streams, arrays, strings, and classes.
-Prerequisite:
 Units: 4
 
-CST 237 Intro to Computer Architecture
+CST-237 Intro to Computer Architecture
+Prerequisite:
 This course introduces computer architectures and computer systems management. Includes data representation, memory, registers, and internals of common computers and system interfaces. Knowledge of C/C++ programming helpful but not mandatory.
-Prerequisite:
 Units: 4
 
-CST 238 Introduction to Data Structures
+CST-238 Introduction to Data Structures
+Prerequisite: CST-231
 Provides students with intermediate-level programming skills to make it possible for them to write clear, efficient, and high-quality code. Students learn basic data structures such as array, list, stack, queue, and tree. They also acquire several basic algorithms in programming such as searching, sorting, and recursion. Furthermore, students learn in-depth knowledge of C++ programming language such as classes, pointers, and dynamic memory management.
-Prerequisite:
 Units: 4
 
-CST 300 Major ProSeminar
+CST-300 Major ProSeminar
+Prerequisite:
 Helps students identify and articulate personal, professional, and social goals. Provides an integrated overview of the computer science and communication design majors and their requirements. Students develop a plan for their learning goals. Students learn writing, presentation, research and critical-thinking skills within the diversified fields of information technology and communication design. Students learn how to analyze, predict, and articulate trends in the academic, public service.
-Prerequisite:
 Units: 4
 
-CST 338 Software Design
+CST-338 Software Design
+Prerequisite: CST-238
 Provides students with the fundamental concepts to develop large-scale software, focusing on the object-oriented programming techniques. Coverage includes the introduction to Java programming language, object-oriented programming, software life cycle and development processes, requirements analysis, and graphical user interface development.
-Prerequisite: CST 238
 Units: 4
 
-CST 334 Operating Systems
+CST-334 Operating Systems
+Prerequisite: CST-238, MATH-130
 Students in this course will learn about the use and design of modern operating systems, focusing on Linux. On the “use” side, students will learn the Linux command line, to write shell scripts, and to build programs with GNU utilities like awk, sed, and make. On the “design” side, students will develop a deep understanding of process management, memory management, file systems, and concurrency, and how they apply to modern technologies like virtualization and cloud computing.
-Prerequisite: CST 238, MATH 130
 Units: 4
 
-CST 370 Design and Analysis of Algorithms
+CST-370 Design and Analysis of Algorithms
+Prerequisite: CST-238, MATH-170
 Students learn important data structures in computer science and acquire fundamental algorithm design techniques to get the efficient solutions to several computing problems from various disciplines. Topics include the analysis of algorithm efficiency, hash, heap, graph, tree, sorting and searching, brute force, divide-and-conquer, decrease-and-conquer, transform-and-conquer, dynamic programming, and greedy programming.
-Prerequisite: CST 238, MATH 170
 Units: 4
 
-CST 462S Race, Gender, Class in the Digital World
-Provides students with key knowledge of race, gender, class and social justice especially in relation to technology in today’s digital world. Students challenge the barriers of expertise, gender, race, class, and location that restrict wider access to and understanding of the production and usage of new technologies. Students will engage in a practical experience in the community via their service placements, which will provide depth and context for considering questions of justice, equality, social responsibilities and the complexities of technology and its societal impact. The course uses scenario based approach combining presentations, discussions, and reflections to allow students explore the relationship between critical reflection and action on the topics mentioned above. 
+CST-462S Race, Gender, Class in the Digital World
 Prerequisite:
+Provides students with key knowledge of race, gender, class and social justice especially in relation to technology in today’s digital world. Students challenge the barriers of expertise, gender, race, class, and location that restrict wider access to and understanding of the production and usage of new technologies. Students will engage in a practical experience in the community via their service placements, which will provide depth and context for considering questions of justice, equality, social responsibilities and the complexities of technology and its societal impact. The course uses scenario based approach combining presentations, discussions, and reflections to allow students explore the relationship between critical reflection and action on the topics mentioned above. 
 Units: 3
 
-CST 499 Computer Science Capstone
+CST-499 Computer Science Capstone
+Prerequisite: CST-300
 Students will work on a project in large groups (up to 5 students in each group), developing requirements specification, a solution plan followed by design and implementation of the solution. The problem statement for the projects will be selected by the faculty. Faculty will also play the role of a project manager directing the schedule and deliverables for these projects.
-Prerequisite: CST 300
 Units: 4
 
-CST 205 Multimedia Design and Programming
-Introduces design, creation, and manipulation of interactive applications and electronic media for communication purpose. Focuses on creating media, understanding media concepts, and manipulating the created media using basic programming concepts of control flow, functions, expressions and data types in the Python language. Students acquire a basic understanding for digital media formats, how to design, create such media using basic programming skills.
+CST-205 Multimedia Design and Programming
 Prerequisite:
+Introduces design, creation, and manipulation of interactive applications and electronic media for communication purpose. Focuses on creating media, understanding media concepts, and manipulating the created media using basic programming concepts of control flow, functions, expressions and data types in the Python language. Students acquire a basic understanding for digital media formats, how to design, create such media using basic programming skills.
 Units: 4
 
-CST 311 Intro to Computer Networks
+CST-311 Intro to Computer Networks
+Prerequisite: CST-238, MATH-130
 Survey of Telecomm and Data Comm Technology Fundamentals, Local Area Network, Wide Area Network, Internet and internetworking protocols including TCP/IP, network security and performance, emerging industry trends such as voice over the network and high speed networking. Designed as a foundation for students who wish to pursue more advanced network studies including certificate programs. Includes hands-on networking labs that incorporate Cisco CCNA lab components.
-Prerequisite: CST 238, MATH 130
 Units: 4
 
-CST 312 Network Security
+CST-312 Network Security
+Prerequisite: CST-311, MATH-170
 Focuses on the theory, practice and technologies for securing computers on the web and the Internet. Students will learn cryptographic tools and how they are used by standard network security protocols like SSL/TLS, IPSEC, Kerberos, PGP, S/MIME, and wireless. Students will also learn about ethical hacking and policies and procedures to protect against such hacking.
-Prerequisite: CST 311, MATH 170
 Units: 4
 
-CST 325 Graphics Programming
+CST-325 Graphics Programming
+Prerequisite: CST-238, MATH-130
 This course teaches the students the fundamentals of game programming and skills needed for game development, including GPU programming, matrix and quaternion algebra for physics calculation, animation, lighting and basics of implementing 3D models into a framework.
-Prerequisite: CST 238, MATH 130
 Units: 4
 
-CST 326 Game Development
+CST-326 Game Development
+Prerequisite: CST-325
 This course provides students with fundamental and transferable game programming skills. Students will learn how to develop games using a game engine and a toolset of object-oriented programming techniques, design patterns and software engineering paradigms. Additionaly, the course discusses ethical considerations in game development, develops interpersonal and oral communication skills, and game design document writing.
-Prerequisite: CST 325
 Units: 4
 
-CST 336 Internet Programming
+CST-336 Internet Programming
+Prerequisite: CST-238
 Provides students with dynamic web application development skills, focusing on the integration of server-side programming, database connectivity, and client-side scripting. Coverage includes the Internet architecture, responsive design, RESTful web services, and Web APIs. 
-Prerequisite: CST 238
 Units: 4
 
-CST 363 Introduction to Database Systems
+CST-363 Introduction to Database Systems
+Prerequisite: CST-238, MATH-130
 This course provides balanced coverage of database use and design,focusing on relational databases. Students will learn to design relational schemas, write SQL queries, access a DB programmatically,and perform database administration. Students will gain a working knowledge of the algorithms and data structures used in query evaluation and transaction processing. Students will also learn to apply newer database technologies such as XML, NoSQL, and Hadoop.
-Prerequisite: CST 238, MATH 130
 Units: 4
 
-CST 383 Introduction to Data Science
-Prerequisite: CST 238
+CST-383 Introduction to Data Science
+Prerequisite: CST-238
 In data science, data analysis and machine learning techniques are applied to visualize data, understand trends, and make predictions. In this course students will learn how to obtain data, preprocess it, apply machine learning methods, and visualize the results. A student who completes the course will have enough theoretical knowledge, and enough skill with modern statistical programming languages and their libraries,to define and perform complete data science projects.
 Units: 4
 
-CST 438 Software Engineering
-Prerequisite: CST 338
+CST-438 Software Engineering
+Prerequisite: CST-338
 Prepares students for large-scale software development using software engineering principles and techniques. Coverage includes software process, requirements analysis and specification, software design, implementation, testing, and project management. Students are expected to work in teams to carry out a realistic software project.
 Units: 4
 
-CST 412 Network Administration
-Prerequisite: CST 311
+CST-412 Network Administration
+Prerequisite: CST-311
 Introduces management tools, skills, and information to design, implement, and manage telecommunications and data communications networks. Includes network design, monitoring, and security.
 Units: 4
 
-CST 426 Advanced Game Development
-Prerequisite: CST 325
+CST-426 Advanced Game Development
+Prerequisite: CST-325
 This course provides students with advanced game development skills. Students will learn how to develop procedural content generation techniques for various platforms, and advanced game input techniques . Students will also learn how to apply gamification technique to serious games development. Additionaly, the course discusses ethical considerations in game development, develops interpersonal and oral communication skills, and game design document writing. 
 Units: 4
 
-CST 463 Advanced Machine Learning
-Prerequisite: CST 383
+CST-463 Advanced Machine Learning
+Prerequisite: CST-383
 In this course students learn to use advanced machine learning methods and big data technologies. The advanced machine learning methods include support vector machines, ensemble methods, probabilistic graph models, neural nets, and methods for working with time series data. The big data technologies support machine learning through the distributed processing of large data sets on a computing cluster.
 Units: 4

@@ -11,15 +11,13 @@ struct Course : public Formatable{
     const std::string course_id; 
     const std::string course_name;
     const std::string course_description;
-    const std::string deparment; 
     const uint16_t units; 
     // No empty courses
     Course() = delete;
     // Non-default constructor.. 
     Course(const std::string &new_id, const std::string &new_name, 
            const std::string& cd, const std::string &dep, const uint16_t &u) 
-           : course_id(new_id), course_description(cd), course_name(new_name),
-           deparment(dep), units(u) {}
+           : course_id(new_id), course_description(cd), course_name(new_name), units(u){}
     // Create format string
     std::string Format_string() override;
 };

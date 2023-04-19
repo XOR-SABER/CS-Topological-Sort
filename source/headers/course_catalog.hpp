@@ -3,8 +3,6 @@
 
 #include <unordered_map>
 #include <optional>
-#include <regex>
-#include <deque>
 
 #include "Vertex.hpp"
 

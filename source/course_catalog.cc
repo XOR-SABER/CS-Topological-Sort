@@ -20,55 +20,62 @@ Catalog::Catalog(const std::string &filename) {
     std::ifstream file(filename);
     if(!file) FILE_NOT_FOUND;
 
-    std::vector<std::string> temp(3);
-    uint16_t unit_cost = 0;
-    bool units = false, preqs = false, descript = false, c_id = false;
+    // O(n) blehh.. 
     while(true) {
-        //This loop is for lines
-        std::string current_line = readline(file);
+        //This we reached the end of the file.. 
         if(!file) break;
-        if(!current_line.size()) continue;
-        // this a temp fix.. 
-        // if(course_constructed) {
-        //     course_constructed = false;
-        //     temp.clear();
-        // }
-        
-        std::cout << current_line << std::endl;
+        std::string current_line = readline(file);
+        if(current_line.empty()) break;
         std::stringstream sts(current_line);
-        std::deque<std::string> queue;
-        std::string word; 
-        // Okay lets turn it into a vector of strings
-        while (sts >> word) queue.push_back(word);
-        if(queue.empty()) continue;
-        // Now we get the C_ID, Course name
-        if(temp.empty()) {
-            temp[0] = queue[0] + "-" + queue[1];
-            queue.pop_front(), queue.pop_front();
-            if(temp[0].back() == '.') temp[0].pop_back(); 
-            // Combine the strings.. 
-            for(const std::string& str : queue) temp[1] += str + " ";
+        std::vector<std::string> build_vec(4);
+        std::vector<std::string> preqs; 
+        uint16_t units; 
+        // Just a temporary buffers.. 
+        std::string temp, temp2;
+        sts >> build_vec[0];
+        // I feel like if I formated the document correctly it wouldn't be like this.. 
+        while(sts) {
+            temp = "";
+            sts >> temp;
+            build_vec[1] += temp + " ";
         }
-        else {
-            // Now we look for the other stuff... 
-            std::regex preq("prereq", std::regex_constants::icase);
-            std::regex units("units", std::regex_constants::icase);
-            std::smatch match;
-            // This is the preqs
-            if(std::regex_search(queue[0], match, preq)) {
-                queue.pop_front();
-                for(const std::string& str : queue) {
-                    temp.push_back(str); 
-                }
-            } else if (std::regex_search(queue[0], match, units)) {
-                unit_cost = std::stoi(queue[1]);
-            } else {
-                for(const std::string& str : queue) temp[2] += str + " ";
-            }
+        // Get the next line.. 
+        sts.clear(); 
+        current_line = readline(file);
+        sts.str(current_line);
+        sts >> temp;
+        // Prereqs done..
+        while(sts) {
+            temp = "";
+            sts >> temp;
+            if(temp.back() == ',') temp.pop_back();
+            preqs.push_back(temp);
         }
-        
-
+        // Get the next line.. 
+        build_vec[2] = readline(file);
+        current_line = readline(file);
+        sts.clear(); 
+        sts.str(current_line);
+        sts >> temp;
+        temp = "";
+        sts >> temp;
+        try{
+            units = std::stoi(temp);
+        } catch(std::invalid_argument) {
+            units = 0;
+        }
+        // Then build the course class.. 
+        Course new_course(build_vec[0], build_vec[1],build_vec[2], units);
+        for (const std::string& str : preqs) {
+            std::optional<Course> other = get(str);
+            if(other.has_value()) ++other.value();
+            new_course.add_connection(str);
+        }
+        // Add back into our vector and hash map..
+        course_list.push_back(new_course);
+        hash_map.insert({new_course.course_id, course_list.size() - 1});
     }
+    for (const Course& c : course_list) std::cout << c << std::endl;
 }
 
 // Overload for output stream... 
@@ -79,6 +86,7 @@ std::ostream &operator<<(std::ostream& outs, const Course& c) {
     for(const std::string &s : c.connections) {
         outs << s << " ";
     }
+    if(c.connections.empty()) outs << "None";
     outs << std::endl;
     outs << "Units: " << c.units; 
     return outs;

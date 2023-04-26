@@ -4,6 +4,18 @@
 #define FILE_NOT_FOUND std::cout << "File not found, exiting program.. \n", exit(0)
 #define COURSE_NOT_FOUND std::cout << "Course not found.. \n"
 
+//This abstracts out the format function, using templates. 
+// if the vector is {"CSCI-1", "CSCI-40", "CSCI-41"} returns "CSCI-1 -> CSCI-40 -> CSCI-41"
+template<typename Container, 
+         typename = std::enable_if_t<std::is_same_v<typename Container::value_type, 
+         std::string>>>
+constexpr void format_str_arrow(const Container& c, std::string &retval) {
+    if(c.empty()) return;
+    for(const std::string &s : c) {
+        retval += s;
+        retval += " -> ";
+    }
+}
 
 /*
 It should look like this: 
@@ -75,14 +87,14 @@ Catalog::Catalog(const std::string &filename) {
         course_list.push_back(new_course);
         hash_map.insert({new_course.course_id, course_list.size() - 1});
     }
-    for (const Course& c : course_list) std::cout << c << std::endl;
+    menu();
 }
 
 // Overload for output stream... 
 std::ostream &operator<<(std::ostream& outs, const Course& c) {
     outs << c.course_id << " : " << c.course_name << std::endl;
-    outs << c.course_description << std::endl;
-    outs << "Prerequisites : ";
+    outs <<  "\t" << c.course_description << std::endl;
+    outs << "\t" << "Prerequisites : ";
     for(const std::string &s : c.connections) {
         outs << s << " ";
     }
@@ -91,7 +103,17 @@ std::ostream &operator<<(std::ostream& outs, const Course& c) {
     outs << "Units: " << c.units; 
     return outs;
 }
-
+std::ostream &operator<<(std::ostream& outs, const Catalog& cat) {
+    size_t index = 0;
+    for(const Course& c : cat.course_list) {
+        outs << "Index: " << index << std::endl;
+        index++;
+        outs << c << std::endl;
+        Vertex &v = const_cast<Course&>(c);
+        outs << v << std::endl;
+    }
+    return outs;
+}
 
 // Get's a course from the hash table, and returns a optional refrence.. 
 std::optional<Course> Catalog::get(const std::string& c_id) const {
@@ -103,3 +125,72 @@ std::optional<Course> Catalog::get(const std::string& c_id) const {
 bool Catalog::check(const std::string& c_id) const {
     return hash_map.count(c_id);
 }
+
+void Catalog::menu() {
+    do{
+        std::cout << "1. Search up a look for a class\n";
+        std::cout << "2. Print statstics on the graph\n";
+        std::cout << "3. Topologically sort prereqs for class\n";
+        std::cout << "4. Print out the graph\n";
+        const int choice = read(": ");  
+        if(choice == 1) {
+            const std::string course_id = read("Please type in a Course ID: ");
+            std::optional<Course> check = get(course_id);
+            if(check.has_value()) std::cout << check.value() << std::endl;
+            else COURSE_NOT_FOUND;
+        } else if(choice == 2) {
+            // TODO: 
+            // Print the highest weight (The most common Prereq / Most important class in the series..)
+            // Print the lowest weight (Least common Preqreq / The least impotant class in the series..)
+            std::cout << "TODO: \n";
+        } else if(choice == 3) {
+            const std::string course_id = read("Please type in a Course ID: ");
+            std::optional<Course> check = get(course_id);
+            if(check.has_value()) std::cout << print_all_prereqs(course_id) << std::endl;
+            else COURSE_NOT_FOUND;
+        } else if(choice == 4) {
+            std::cout << *this;
+        } else break;
+    } while(true);
+
+    exit(EXIT_SUCCESS);
+}
+
+// Returns a formated string with all the prereqs
+std::string Catalog::print_all_prereqs(const std::string &course) {
+    std::vector<std::string> vec = list_all_prereqs(course);
+    std::string retval;
+    format_str_arrow(vec, retval);
+    retval += course;
+    return retval;
+}
+
+// Helper function to list_all_prereqs
+std::vector<std::string> Catalog::list_all_prereqs(const std::string &course) {
+    // Check get vertex to check if this precached.. 
+    Course &curr_vertex = course_list.at(hash_map.at(course));
+    if(!curr_vertex.check_cache()) return curr_vertex.get_topo_cache();
+    // We start the algo.. 
+    std::unordered_set<std::string> check; 
+    std::vector<std::string> retval;
+    // Recursion is useful sometimes. 
+    size_t current_index = hash_map.at(course);
+    for(std::string s : course_list.at(current_index).get_connnections()) find_prereqs(retval, s, check);
+    curr_vertex.update_cache(retval);
+    return retval;
+}
+
+//Helper function to list_all_prereqs
+void Catalog::find_prereqs(std::vector<std::string> &retval, const std::string & course, std::unordered_set<std::string> &check) {
+    //if this in the hash
+    if(check.count(course)) return; 
+    std::optional<Course> tmp = get(course);
+    if(!tmp.has_value()) return;
+    size_t current_index = hash_map.at(course);
+    Course &current_course = course_list.at(current_index);
+    for(std::string s : current_course.get_connnections()) find_prereqs(retval, s, check);
+    check.insert(course);
+    retval.push_back(course);
+}
+
+

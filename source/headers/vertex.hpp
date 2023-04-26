@@ -27,6 +27,7 @@ public:
     Vertex(const std::string&);
     // I got Getters and setters now.. 
     void add_connection(const std::string&);
+    bool check_cache() const { return topo_cache.empty();}
     void update_cache(const std::vector<std::string>&);
     std::vector<std::string> &get_topo_cache(); 
     std::vector<std::string> &get_connnections();

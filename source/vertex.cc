@@ -53,6 +53,7 @@ std::ostream &operator<<(std::ostream &outs, const Vertex &v) {
     if(v.connections.empty()) outs << "None ";
     else for(const std::string &s : v.connections) outs << s << " ";
     outs << "\n\tPrereq weight : " << v.weight;
+    outs << "\n\tTotal Edge weight : " << v.total_edge_weight;
     return outs;
 }
 

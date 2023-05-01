@@ -45,7 +45,6 @@ Catalog::Catalog(const std::string &filename) {
         // Just a temporary buffers.. 
         std::string temp, temp2;
         sts >> build_vec[0];
-        // I feel like if I formated the document correctly it wouldn't be like this.. 
         while(sts) {
             temp = "";
             sts >> temp;
@@ -80,8 +79,10 @@ Catalog::Catalog(const std::string &filename) {
         Course new_course(build_vec[0], build_vec[1],build_vec[2], units);
         for (const std::string& str : preqs) {
             std::optional<Course> other = get(str);
-            if(other.has_value()) ++other.value();
-            new_course.add_connection(str);
+            if(other.has_value()) {
+                Course &c = other.value();
+                new_course.add_connection(str);
+            } else continue;
         }
         // Add back into our vector and hash map..
         course_list.push_back(new_course);
@@ -90,19 +91,6 @@ Catalog::Catalog(const std::string &filename) {
     menu();
 }
 
-// Overload for output stream... 
-std::ostream &operator<<(std::ostream& outs, const Course& c) {
-    outs << c.course_id << " : " << c.course_name << std::endl;
-    outs <<  "\t" << c.course_description << std::endl;
-    outs << "\t" << "Prerequisites : ";
-    for(const std::string &s : c.connections) {
-        outs << s << " ";
-    }
-    if(c.connections.empty()) outs << "None";
-    outs << std::endl;
-    outs << "Units: " << c.units; 
-    return outs;
-}
 std::ostream &operator<<(std::ostream& outs, const Catalog& cat) {
     size_t index = 0;
     for(const Course& c : cat.course_list) {

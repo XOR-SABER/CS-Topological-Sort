@@ -31,6 +31,9 @@ public:
     void update_cache(const std::vector<std::string>&);
     std::vector<std::string> &get_topo_cache(); 
     std::vector<std::string> &get_connnections();
+    constexpr inline size_t get_weight() const {
+        return weight;
+    }
     // Operator Overloads: 
     void operator++();
     std::string &operator[](const size_t&);

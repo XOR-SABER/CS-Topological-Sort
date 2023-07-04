@@ -1,5 +1,9 @@
 #include "headers/course.hpp"
 
+void Course::operator++() {
+    this->weight++;
+}
+
 // Overload for output stream... 
 std::ostream &operator<<(std::ostream& outs, const Course& c) {
     outs << c.course_id << " : " << c.course_name << std::endl;

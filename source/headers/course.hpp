@@ -18,6 +18,7 @@ struct Course : public Vertex {
            const std::string& cd, const uint16_t &u) 
            : course_id(new_id), course_description(cd), course_name(new_name),
            deparment(new_id), units(u), Vertex(new_id) {}
+    void operator++();
     friend std::ostream &operator<<(std::ostream&, const Course&);
 };
 

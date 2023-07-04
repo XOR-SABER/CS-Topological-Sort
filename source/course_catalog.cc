@@ -82,10 +82,12 @@ Catalog::Catalog(const std::string &filename) {
             if(other.has_value()) {
                 Course &c = other.value();
                 new_course.add_connection(str);
+                increase_weight(str);
             } else continue;
         }
         // Add back into our vector and hash map..
         course_list.push_back(new_course);
+        course_trie.insert(new_course.course_id);
         hash_map.insert({new_course.course_id, course_list.size() - 1});
     }
     menu();
@@ -116,29 +118,54 @@ bool Catalog::check(const std::string& c_id) const {
 
 void Catalog::menu() {
     do{
+        Course* lowest_weight = nullptr;
+        Course* highest_weight = nullptr;
         std::cout << "1. Search up a look for a class\n";
         std::cout << "2. Print statstics on the graph\n";
         std::cout << "3. Topologically sort prereqs for class\n";
         std::cout << "4. Print out the graph\n";
         const int choice = read(": ");  
         if(choice == 1) {
+            std::cout << std::endl;
             const std::string course_id = read("Please type in a Course ID: ");
             std::optional<Course> check = get(course_id);
             if(check.has_value()) std::cout << check.value() << std::endl;
-            else COURSE_NOT_FOUND;
+            else  {
+                COURSE_NOT_FOUND;
+                const std::vector<std::string> suggestion = course_trie.suggestions(course_id);
+                if(!suggestion.empty()) {
+                    std::cout << "Did you mean?: " << std::endl;
+                    for (const std::string &s : suggestion) std::cout << s << std::endl;
+                }
+            }
+            std::cout << std::endl;
         } else if(choice == 2) {
-            // TODO: 
-            // Print the highest weight (The most common Prereq / Most important class in the series..)
-            // Print the lowest weight (Least common Preqreq / The least impotant class in the series..)
-            std::cout << "TODO: \n";
+            if(lowest_weight == nullptr && highest_weight == nullptr) {
+                // Set the pointers.. 
+                lowest_weight = &course_list.at(0);
+                highest_weight = &course_list.at(0);
+                for(Course &c : course_list) {
+                    if(c.get_weight() > highest_weight->get_weight()) highest_weight = &c;
+                    if(c.get_weight() < lowest_weight->get_weight()) lowest_weight = &c;
+                }
+            } 
+            std::cout << std::endl;
+            std::cout << "Course with the lowest weight, with a weight of: " << lowest_weight->get_weight() << std::endl;
+            std::cout << *lowest_weight << std::endl << std::endl; 
+            std::cout << "Course with the highest weight, with a weight of: " << highest_weight->get_weight() << std::endl;
+            std::cout << *highest_weight << std::endl << std::endl;
         } else if(choice == 3) {
+            std::cout << std::endl;
             const std::string course_id = read("Please type in a Course ID: ");
             std::optional<Course> check = get(course_id);
             if(check.has_value()) std::cout << print_all_prereqs(course_id) << std::endl;
             else COURSE_NOT_FOUND;
+            std::cout << std::endl;
         } else if(choice == 4) {
+            std::cout << std::endl;
             std::cout << *this;
-        } else break;
+            std::cout << std::endl;
+        }
     } while(true);
 
     exit(EXIT_SUCCESS);
@@ -182,3 +209,8 @@ void Catalog::find_prereqs(std::vector<std::string> &retval, const std::string &
 }
 
 
+bool Catalog::increase_weight(const std::string& c_id) {
+    if(!hash_map.count(c_id)) return false;
+    ++course_list[hash_map.at(c_id)];
+    return true;
+}

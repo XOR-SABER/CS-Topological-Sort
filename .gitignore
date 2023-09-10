@@ -30,6 +30,8 @@
 *.exe
 *.out
 *.app
+topo
 
 # folders
 old/*
+/.vscode

@@ -1,3 +1,4 @@
+California State University Monterey Bay
 MATH-130 Precalculus
 Prerequisite:
 Functions and graphs, including polynomial, rational, exponential, logarithmic, and trigonometric functions. Applications, data analysis, mathematical modeling, and analytic trigonometry.

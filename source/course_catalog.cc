@@ -30,6 +30,7 @@ Units: 4
 Catalog::Catalog(const std::string &filename) {
     //Build the graph
     std::ifstream file(filename);
+    size_t lines_read = 0; 
     if(!file) FILE_NOT_FOUND;
 
     // O(n) blehh.. 
@@ -37,6 +38,11 @@ Catalog::Catalog(const std::string &filename) {
         //This we reached the end of the file.. 
         if(!file) break;
         std::string current_line = readline(file);
+        if(lines_read == 0) {
+            this->school = current_line;
+            lines_read++;
+            continue;
+        }
         if(current_line.empty()) break;
         std::stringstream sts(current_line);
         std::vector<std::string> build_vec(4);
@@ -89,6 +95,7 @@ Catalog::Catalog(const std::string &filename) {
         course_list.push_back(new_course);
         course_trie.insert(new_course.course_id);
         hash_map.insert({new_course.course_id, course_list.size() - 1});
+        lines_read++;
     }
     menu();
 }
@@ -117,58 +124,88 @@ bool Catalog::check(const std::string& c_id) const {
 }
 
 void Catalog::menu() {
+    Course* lowest_weight = nullptr;
+    Course* highest_weight = nullptr;
     do{
-        Course* lowest_weight = nullptr;
-        Course* highest_weight = nullptr;
+        std::cout << "Course Catalog:\n" << school << std::endl;
         std::cout << "1. Search up a look for a class\n";
         std::cout << "2. Print statstics on the graph\n";
         std::cout << "3. Topologically sort prereqs for class\n";
         std::cout << "4. Print out the graph\n";
         const int choice = read(": ");  
-        if(choice == 1) {
-            std::cout << std::endl;
-            const std::string course_id = read("Please type in a Course ID: ");
-            std::optional<Course> check = get(course_id);
-            if(check.has_value()) std::cout << check.value() << std::endl;
-            else  {
-                COURSE_NOT_FOUND;
-                const std::vector<std::string> suggestion = course_trie.suggestions(course_id);
-                if(!suggestion.empty()) {
-                    std::cout << "Did you mean?: " << std::endl;
-                    for (const std::string &s : suggestion) std::cout << s << std::endl;
-                }
-            }
-            std::cout << std::endl;
-        } else if(choice == 2) {
-            if(lowest_weight == nullptr && highest_weight == nullptr) {
-                // Set the pointers.. 
-                lowest_weight = &course_list.at(0);
-                highest_weight = &course_list.at(0);
-                for(Course &c : course_list) {
-                    if(c.get_weight() > highest_weight->get_weight()) highest_weight = &c;
-                    if(c.get_weight() < lowest_weight->get_weight()) lowest_weight = &c;
-                }
-            } 
-            std::cout << std::endl;
-            std::cout << "Course with the lowest weight, with a weight of: " << lowest_weight->get_weight() << std::endl;
-            std::cout << *lowest_weight << std::endl << std::endl; 
-            std::cout << "Course with the highest weight, with a weight of: " << highest_weight->get_weight() << std::endl;
-            std::cout << *highest_weight << std::endl << std::endl;
-        } else if(choice == 3) {
-            std::cout << std::endl;
-            const std::string course_id = read("Please type in a Course ID: ");
-            std::optional<Course> check = get(course_id);
-            if(check.has_value()) std::cout << print_all_prereqs(course_id) << std::endl;
-            else COURSE_NOT_FOUND;
-            std::cout << std::endl;
-        } else if(choice == 4) {
+        switch (choice)
+        {
+        case 1:
+            course_search();
+            break;
+        case 2:
+            get_stats(lowest_weight, highest_weight);
+            break;
+        case 3:
+            get_prereqs();
+            break;
+        case 4:
             std::cout << std::endl;
             std::cout << *this;
             std::cout << std::endl;
+            break;
+        default:
+            std::cout << " Invalid Option... \n";
+            break;
         }
     } while(true);
 
     exit(EXIT_SUCCESS);
+}
+
+void Catalog::course_search() {
+    std::cout << std::endl;
+    const std::string course_id = read("Please type in a Course ID: ");
+    std::optional<Course> check = get(course_id);
+    if(check.has_value()) std::cout << check.value() << std::endl;
+    else  {
+        COURSE_NOT_FOUND;
+        const std::set<std::string> suggestion = course_trie.auto_correct(course_id);
+        if(!suggestion.empty()) {
+            std::cout << "Did you mean?: " << std::endl;
+            for (const std::string &s : suggestion) std::cout << s << std::endl;
+        }
+    }
+    std::cout << std::endl;
+}
+
+void Catalog::get_stats(Course* lowest_weight, Course* highest_weight) {
+    if(lowest_weight == nullptr && highest_weight == nullptr) {
+        std::cout << "setting the pointers" << std::endl;
+        // Set the pointers.. 
+        lowest_weight = &course_list.at(0);
+        highest_weight = &course_list.at(0);
+        for(Course &c : course_list) {
+            if(c.get_weight() > highest_weight->get_weight()) highest_weight = &c;
+            if(c.get_weight() < lowest_weight->get_weight()) lowest_weight = &c;
+        }
+    } 
+    std::cout << std::endl;
+    std::cout << "Course with the lowest weight, with a weight of: " << lowest_weight->get_weight() << std::endl;
+    std::cout << *lowest_weight << std::endl << std::endl; 
+    std::cout << "Course with the highest weight, with a weight of: " << highest_weight->get_weight() << std::endl;
+    std::cout << *highest_weight << std::endl << std::endl;
+}
+
+void Catalog::get_prereqs() {
+    std::cout << std::endl;
+    const std::string course_id = read("Please type in a Course ID: ");
+    std::optional<Course> check = get(course_id);
+    if(check.has_value()) std::cout << print_all_prereqs(course_id) << std::endl;
+    else  {
+        COURSE_NOT_FOUND;
+        const std::set<std::string> suggestion = course_trie.auto_correct(course_id);
+        if(!suggestion.empty()) {
+            std::cout << "Did you mean?: " << std::endl;
+            for (const std::string &s : suggestion) std::cout << s << std::endl;
+        }
+    }
+    std::cout << std::endl;
 }
 
 // Returns a formated string with all the prereqs

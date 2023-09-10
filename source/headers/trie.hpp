@@ -2,7 +2,7 @@
 #define _ALEX_TRIE_HPP
 
 #include <memory>
-#include <vector>
+#include <set>
 #include <unordered_map>
 
 struct TrieNode{
@@ -33,10 +33,11 @@ protected:
     }
 
     // Private Recursive function for collecting suggestions..
-    void collectSuggestions(TrieNode* node, const std::string& prefix, std::vector<std::string>& suggestions) {
-        if (node->isEnd) suggestions.push_back(prefix);
+    void collectSuggestions(TrieNode* node, const std::string& prefix, std::set<std::string>& suggestions) {
+        if(suggestions.size() > 6) return;
+        if (node->isEnd) suggestions.insert(prefix);
         for (const auto& pair : node->NodeMap) 
-            collectSuggestions(pair.second.get(), prefix + char(std::tolower(pair.first)), suggestions);
+            collectSuggestions(pair.second.get(), prefix + char(std::toupper(pair.first)), suggestions);
     }
 
 public: 
@@ -86,11 +87,21 @@ public:
     }
 
     //Returns a list of suggested strings from the trie
-    std::vector<std::string> suggestions(const std::string &prefix) {
-        std::vector<std::string> retval;
+    std::set<std::string> suggestions(const std::string &prefix) {
+        std::set<std::string> retval;
         TrieNode* current = traverse(prefix);
-        if (current) {
-            collectSuggestions(current, prefix, retval);
+        if (current) collectSuggestions(current, prefix, retval);
+        return retval;
+    }
+
+    //Collect 6 suggestions or if the prefix is empty return the vector.. 
+    std::set<std::string> auto_correct(std::string prefix) {
+        std::set<std::string> retval;
+        //Collect 6 suggestions or if the prefix is empty 
+        while((retval.size() < 6) || !(prefix.size() == 0)) {
+            TrieNode* current = traverse(prefix);
+            if (current) collectSuggestions(current, prefix, retval);
+            prefix.pop_back();
         }
         return retval;
     }
@@ -113,10 +124,6 @@ public:
         }
         return outs;
     }
-    
-
-
-
 };
 
 #endif

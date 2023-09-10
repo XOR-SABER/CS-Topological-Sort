@@ -12,6 +12,7 @@ class Catalog {
 private:
     // So a entry in the hash table would be {CSCI-40, 0} 
     // which 0 is the index which CSCI-40 is located in the course list
+    std::string school; 
     std::unordered_map<std::string, size_t> hash_map;
     std::vector<Course> course_list; 
     Trie course_trie;
@@ -25,7 +26,7 @@ public:
     Catalog() = delete;
     // Build catalog from file.. 
     Catalog(const std::string &filename);
-    void menu();
+
     // Prints all prereqs
     std::string print_all_prereqs(const std::string &);
     // This is the topological sorting.. 
@@ -35,6 +36,10 @@ public:
     // Check if a course exists.. 
     bool increase_weight(const std::string& c_id);
     bool check(const std::string& c_id) const;
+    void get_stats(Course*, Course*);
+    void course_search();
+    void get_prereqs();
+    void menu();
     friend std::ostream &operator<<(std::ostream&, const Catalog&);
 };
 

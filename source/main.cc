@@ -26,4 +26,6 @@ int main() {
         }
         if(running) Catalog course_catalog(choice);
     } while(running);
+
+    exit(EXIT_SUCCESS);
 }

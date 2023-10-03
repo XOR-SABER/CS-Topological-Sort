@@ -126,6 +126,7 @@ bool Catalog::check(const std::string& c_id) const {
 }
 
 void Catalog::menu() {
+    bool isRunning = true;
     Course* lowest_weight = nullptr;
     Course* highest_weight = nullptr;
     do{
@@ -134,6 +135,7 @@ void Catalog::menu() {
         std::cout << "2. Print statstics on the graph\n";
         std::cout << "3. Topologically sort prereqs for class\n";
         std::cout << "4. Print out the graph\n";
+        std::cout << "5. To exit the program and select another institution\n";
         int choice = read(": ");  
         switch (choice)
         {
@@ -158,13 +160,14 @@ void Catalog::menu() {
             std::cout << *this;
             std::cout << std::endl;
             break;
+        case 5:
+            isRunning = false;
+            break;
         default:
-            std::cout << " Invalid Option... \n";
+            std::cout << "Invalid Option... \n";
             break;
         }
-    } while(true);
-
-    exit(EXIT_SUCCESS);
+    } while(isRunning);
 }
 
 void Catalog::course_search_title() {

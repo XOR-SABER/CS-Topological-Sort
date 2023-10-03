@@ -120,6 +120,7 @@ std::map<std::string, std::string> Title_Trie::suggestions(const std::string &pr
 //Collect 6 suggestions or if the prefix is empty return the vector.. 
 std::map<std::string, std::string> Title_Trie::auto_correct(std::string prefix) {
     std::map<std::string, std::string> retval;
+    for(char & c : prefix) c = std::toupper(c);
     //Collect 6 suggestions or if the prefix is empty 
     while((retval.size() < 6)) {
         if(prefix.empty()) break;

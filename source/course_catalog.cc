@@ -65,6 +65,7 @@ Catalog::Catalog(const std::string &filename) {
         while(sts) {
             temp = "";
             sts >> temp;
+            if(temp.empty()) continue; 
             if(temp.back() == ',') temp.pop_back();
             preqs.push_back(temp);
         }
@@ -94,6 +95,7 @@ Catalog::Catalog(const std::string &filename) {
         // Add back into our vector and hash map..
         course_list.push_back(new_course);
         course_trie.insert(new_course.course_id);
+        title_tire.insert(new_course.course_name , new_course.course_id);
         hash_map.insert({new_course.course_id, course_list.size() - 1});
         lines_read++;
     }
@@ -127,16 +129,23 @@ void Catalog::menu() {
     Course* lowest_weight = nullptr;
     Course* highest_weight = nullptr;
     do{
-        std::cout << "Course Catalog:\n" << school << std::endl;
+        std::cout << "\n\nCourse Catalog: " << school << std::endl;
         std::cout << "1. Search up a look for a class\n";
         std::cout << "2. Print statstics on the graph\n";
         std::cout << "3. Topologically sort prereqs for class\n";
         std::cout << "4. Print out the graph\n";
-        const int choice = read(": ");  
+        int choice = read(": ");  
         switch (choice)
         {
         case 1:
-            course_search();
+            std::cout << "\n1. Search by ID\n";
+            std::cout << "2. Search by Title\n";
+            choice = read(": ");
+            if(choice == 1) {
+                course_search_id();
+            } else {
+                course_search_title();
+            }
             break;
         case 2:
             get_stats(lowest_weight, highest_weight);
@@ -158,7 +167,19 @@ void Catalog::menu() {
     exit(EXIT_SUCCESS);
 }
 
-void Catalog::course_search() {
+void Catalog::course_search_title() {
+    std::cout << std::endl;
+    const std::string course_title = read("Please type in a Course Title: ");
+    const std::map<std::string, std::string> suggestion = title_tire.auto_correct(course_title);
+    if(!suggestion.empty()) {
+        for (const auto& pair : suggestion) {
+            std::cout << pair.second << ": " << pair.first << std::endl;
+        }
+
+    } else COURSE_NOT_FOUND;
+}
+
+void Catalog::course_search_id() {
     std::cout << std::endl;
     const std::string course_id = read("Please type in a Course ID: ");
     std::optional<Course> check = get(course_id);
@@ -174,9 +195,8 @@ void Catalog::course_search() {
     std::cout << std::endl;
 }
 
-void Catalog::get_stats(Course* lowest_weight, Course* highest_weight) {
+void Catalog::get_stats(Course*& lowest_weight, Course*& highest_weight) {
     if(lowest_weight == nullptr && highest_weight == nullptr) {
-        std::cout << "setting the pointers" << std::endl;
         // Set the pointers.. 
         lowest_weight = &course_list.at(0);
         highest_weight = &course_list.at(0);

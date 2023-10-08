@@ -95,11 +95,24 @@ Catalog::Catalog(const std::string &filename) {
         // Add back into our vector and hash map..
         course_list.push_back(new_course);
         course_trie.insert(new_course.course_id);
-        title_tire.insert(new_course.course_name , new_course.course_id);
+        insert_title(new_course.course_name, new_course.course_id);
+        // title_tire.insert(new_course.course_name , new_course.course_id);
         hash_map.insert({new_course.course_id, course_list.size() - 1});
         lines_read++;
     }
     menu();
+}
+
+void Catalog::insert_title(std::string course_name, const std::string& course_id) {
+    std::stringstream sts;
+    sts.str(course_name);
+    // insert if we have a direct match. 
+    title_tire.insert(course_name , course_id);
+    while (sts) {
+        std::string buffer;
+        sts >> buffer;
+        title_tire.insert(buffer, course_id);
+    }
 }
 
 std::ostream &operator<<(std::ostream& outs, const Catalog& cat) {
@@ -126,7 +139,7 @@ bool Catalog::check(const std::string& c_id) const {
 }
 
 void Catalog::menu() {
-    bool isRunning = true;
+    bool is_running = true;
     Course* lowest_weight = nullptr;
     Course* highest_weight = nullptr;
     do{
@@ -161,23 +174,35 @@ void Catalog::menu() {
             std::cout << std::endl;
             break;
         case 5:
-            isRunning = false;
+            is_running = false;
             break;
         default:
             std::cout << "Invalid Option... \n";
             break;
         }
-    } while(isRunning);
+    } while(is_running);
+}
+
+//This abstracts out the format function, using templates. 
+template<typename Container, 
+         typename = std::enable_if_t<std::is_same_v<typename Container::value_type, 
+         std::string>>>
+    void Catalog::print_titles(const Container& c) {
+    for(const std::string& str : c) {
+            std::optional<Course> check = get(str);
+            if(check.has_value()) std::cout << check.value().course_id 
+            << " : " << check.value().course_name << std::endl;
+            else COURSE_NOT_FOUND;
+        }
 }
 
 void Catalog::course_search_title() {
     std::cout << std::endl;
     const std::string course_title = read("Please type in a Course Title: ");
-    const std::map<std::string, std::string> suggestion = title_tire.auto_correct(course_title);
-    if(!suggestion.empty()) {
-        for (const auto& pair : suggestion) {
-            std::cout << pair.second << ": " << pair.first << std::endl;
-        }
+    const std::set<std::string> suggestions = title_tire.auto_correct(course_title);
+    if(!suggestions.empty()) {
+        std::cout << "Did you mean?: " << std::endl;
+        print_titles(suggestions);
 
     } else COURSE_NOT_FOUND;
 }
@@ -189,10 +214,10 @@ void Catalog::course_search_id() {
     if(check.has_value()) std::cout << check.value() << std::endl;
     else  {
         COURSE_NOT_FOUND;
-        const std::set<std::string> suggestion = course_trie.auto_correct(course_id);
-        if(!suggestion.empty()) {
+        const std::set<std::string> suggestions = course_trie.auto_correct(course_id);
+        if(!suggestions.empty()) {
             std::cout << "Did you mean?: " << std::endl;
-            for (const std::string &s : suggestion) std::cout << s << std::endl;
+            print_titles(suggestions);
         }
     }
     std::cout << std::endl;
@@ -209,9 +234,11 @@ void Catalog::get_stats(Course*& lowest_weight, Course*& highest_weight) {
         }
     } 
     std::cout << std::endl;
-    std::cout << "Course with the lowest weight, with a weight of: " << lowest_weight->get_weight() << std::endl;
+    std::cout << "Course with the lowest weight, with a weight of: " 
+              << lowest_weight->get_weight() << std::endl;
     std::cout << *lowest_weight << std::endl << std::endl; 
-    std::cout << "Course with the highest weight, with a weight of: " << highest_weight->get_weight() << std::endl;
+    std::cout << "Course with the highest weight, with a weight of: " 
+              << highest_weight->get_weight() << std::endl;
     std::cout << *highest_weight << std::endl << std::endl;
 }
 

@@ -1,0 +1,7 @@
+San Jose State University
+CS-46A Introduction to Programming
+Prerequisite:
+Introduction to programming for anyone new to the field or who needs a refresher with basic Java programming syntax, object-oriented paradigm, control structures, iteration, etc. Hands-on activities in writing, compiling, executing, and debugging programs for solving real-world problems. 
+Units 4
+
+WIP

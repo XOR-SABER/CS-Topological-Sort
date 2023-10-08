@@ -104,32 +104,17 @@ std::ostream &operator<<(std::ostream &outs, const Trie &t) {
     return outs;
 }
 
-void Title_Trie::collectSuggestions(TrieNode* node, const std::string& prefix, std::map<std::string, std::string>& suggestions) {
+void Title_Trie::collectSuggestions(TrieNode* node, const std::string& prefix, std::set<std::string>& suggestions) {
     if(suggestions.size() > 6) return;
-    if (node->isEnd) suggestions.insert(std::make_pair(prefix, (std::string)node->cid));
+    if (node->isEnd) {
+        for(const std::string& str : node->cid) {
+            suggestions.insert(str);
+        }
+    }
     for (const auto& pair : node->NodeMap) 
         collectSuggestions(pair.second.get(), prefix + char(std::toupper(pair.first)), suggestions);
 }
-//Returns a list of suggested strings from the trie
-std::map<std::string, std::string> Title_Trie::suggestions(const std::string &prefix) {
-    std::map<std::string, std::string> retval;
-    TrieNode* current = traverse(prefix);
-    if (current) collectSuggestions(current, prefix, retval);
-    return retval;
-}
-//Collect 6 suggestions or if the prefix is empty return the vector.. 
-std::map<std::string, std::string> Title_Trie::auto_correct(std::string prefix) {
-    std::map<std::string, std::string> retval;
-    for(char & c : prefix) c = std::toupper(c);
-    //Collect 6 suggestions or if the prefix is empty 
-    while((retval.size() < 6)) {
-        if(prefix.empty()) break;
-        TrieNode* current = traverse(prefix);
-        if (current) collectSuggestions(current, prefix, retval);
-        prefix.pop_back();
-    }
-    return retval;
-}
+
 bool Title_Trie::insert(const std::string &prefix, const std::string &cid) {
     // Grab a pointer to the current node!
     TrieNode* current = rootptr.get();
@@ -139,7 +124,7 @@ bool Title_Trie::insert(const std::string &prefix, const std::string &cid) {
         current = current->NodeMap.at(upperChar).get();
     }
     current->isEnd = true;
-    current->cid = cid;
+    current->cid.push_back(cid);
     return true; 
 }
 

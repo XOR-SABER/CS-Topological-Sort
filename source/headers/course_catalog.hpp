@@ -21,6 +21,11 @@ protected:
     // Ok, I know what I was doing here, and yeah it was kinda smart. 
     // Using private methods to do the actual methods, and public being a accessible alliases.
     // We call this in list_all_prereqs
+    template<typename Container, 
+         typename = std::enable_if_t<std::is_same_v<typename Container::value_type, 
+         std::string>>>
+    void print_titles(const Container&);
+    void insert_title(std::string, const std::string&);
     void find_prereqs(std::vector<std::string>&, const std::string&, std::unordered_set<std::string>&);
 public:
     // No default, since no file to build from.. 

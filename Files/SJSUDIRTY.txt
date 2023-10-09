@@ -1,0 +1,767 @@
+CS 22A - Python for Everyone
+3 unit(s)
+Introduction to Python programming in interesting, relevant, and practical contexts. Programming skills are developed
+to solve problems in such fields as life sciences, mathematics, and business. Fundamental programming constructs:
+data structures and algorithms, iterations, and functions. Course is intended for students who have no prior
+programming experience.San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2643 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Satisfies B4: Mathematics/Quantitative Reasoning.
+Corequisite(s): CS 1022AS is required for Math Enrollment Category M-III and M-IV.
+Grading: Letter Graded
+CS 22B - Python Programming for Data Analysis
+3 unit(s)
+Hands-on Python programming skills for data analysis. Skills include finding a solution for a given problem
+and casting it as an algorithm, translating an algorithm to executable code, and debugging and testing code.
+Applications focus on computational techniques to understand, analyze, and visualize data.
+Prerequisite(s): CS 22A with a grade of C- or better, or consent of the instructor.
+Grading: Letter Graded
+CS 25 - The Digital World and Society
+3 unit(s)
+The secure, effective and ethical use of information technology. The effect of such technology on people and
+institutions. Technology-related challenges to society and policy. Frameworks for the analysis of information
+technology with respect to its cultural, historical, environmental, and spatial contexts.
+Satisfies D: Social Sciences (formerly GE Area D1).
+Grading: Letter Graded
+Cross-listed with ENGR 25. General Engineering is responsible for scheduling.
+CS 40 - Introduction to Computers
+3 unit(s)
+For students with little or no computer experience. Topics include: history of computing, user interfaces, computer
+applications, programming, hardware and software, computer networks.
+Grading: Letter Graded
+CS 42 - Discrete Mathematics
+3 unit(s)
+Sets, logic, methods of proof including mathematical induction, functions, relations, elementary combinatorics,
+probability, Boolean algebras.
+Prerequisite(s): Math Enrollment Category M-I or M-II and satisfactory score on the Precalculus Proficiency
+Assessment; MATH 19 with a grade of "B" or better to waive the exam; or MATH 18A and MATH 18B, with a grade of
+"B" or better in each to waive the exam.
+Grading: Letter Graded
+Note(s): Students who are repeating MATH 42 and MATH 42X are not eligible for this class and must take MATH
+42X.San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2644 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Cross-listed with MATH 42. Mathematics and Statistics is responsible for scheduling.
+CS 42X - Discrete Mathematics
+3 unit(s)
+Sets, logic, methods of proof including mathematical induction, functions, relations, elementary combinatorics,
+probability, Boolean algebras.
+Prerequisite(s): Math Enrollment Category M-I, M-II, M-III and satisfactory score on the Precalculus Proficiency
+Assessment; MATH 19 with a grade of C- or better to waive the exam; or MATH 18A and MATH 18B with a grade of
+C- or better in each to waive the exam.
+Corequisite(s): MATH 42W.
+Grading: Letter Graded
+Cross-listed with MATH 42X. Mathematics and Statistics is responsible for scheduling.
+CS 46A - Introduction to Programming
+4 unit(s)
+Basic skills and concepts of computer programming in an object-oriented approach using Java. Classes, methods
+and argument passing, control structures, iteration. Basic graphical user interface programming. Problem solving,
+class discovery and stepwise refinement. Programming and documentation style. Weekly hands-on activity.
+Lecture 4 hour/lab 3 hours.
+Prerequisite(s): Math Enrollment Category M-I, M-II, or M-III, or MATH 1 with a grade of C- or better; and a major of
+Computer Science, Software Engineering, Forensic Science: Digital Evidence, or Undeclared; or instructor consent.
+Grading: Letter Graded
+CS 46B - Introduction to Data Structures
+4 unit(s)
+Stacks and queues, recursion, lists, dynamic arrays, binary search trees. Iteration over collections. Hashing.
+Searching, elementary sorting. Big-O notation. Standard collection classes. Weekly hands-on activity.
+Lecture 3 hours/lab 3 hours.
+Prerequisite(s): Knowledge of Java equivalent to CS 46A (in Java) or CS 49J (with grade of C- or better). Math
+Enrollment Category M-I or M-II and satisfactory score on the Precalculus Proficiency Assessment (70 or higher), or
+MATH 19 with a C- or better, or MATH 18A and MATH 18B with C- or better.
+Grading: Letter Graded
+CS 47 - Introduction to Computer Systems
+3 unit(s)
+Instruction sets, assembly language and assemblers, linkers and loaders, data representation and manipulation,
+interrupts, pointers, function calls, argument passing, and basic gate-level digital logic design.
+Prerequisite(s): CS 42 / MATH 42 orCS 42X / MATH 42X, and CS 46B (with a grade of "C-" or better).
+Grading: Letter GradedSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2645 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+CS 49C - Programming in C
+3 unit(s)
+Beginning course in the C language.
+Prerequisite(s): Previous programming experience and completion of math GE.
+Grading: Letter Graded
+CS 49J - Programming in Java
+3 unit(s)
+Introduction to the Java programming language and libraries. Topics include fundamental data types and control
+structures, object-oriented programming, string processing, input/output, and error handling. Use of Java libraries for
+mathematics, graphics, collections, and for user interfaces.
+Prerequisite(s): Previous programming experience in a language other than Java.
+Grading: Letter Graded
+CS 50 - Scientific Computing I
+2 unit(s)
+Computer systems and structured programming, emphasizing solutions of problems in the atmospheric sciences
+using Python programming. Includes the UNIX operating system, mass data handling and data visualization.
+Lecture 1 hour/Lab 3 hours.
+Prerequisite(s): MATH 30 or MATH 30X.
+Corequisite(s): For METR majors: MATH 31 or MATH 30X, METR 60, PHYS 50. For Climate Science majors:
+METR 60 and CHEM 1A.
+Grading: Letter Graded
+Cross-listed with MATH 50 / METR 50. Meteorology and Climate Science is responsible for scheduling.
+CS 85A - Practical Computing Topics
+1 unit(s)
+Computing topics of current interest in industrial practice. Emphasis on effective use and integration of
+software/hardware. Different topics may be offered at different times in a short-course lecture/lab format.
+Different versions of this course may be repeated for credit.
+Prerequisite(s): Varies with topic
+Grading: Credit/No Credit
+CS 85C - Practical Computing Topics
+3 unit(s)
+Computing topics of current interest in industrial practice. Emphasis on effective use and integration of
+software/hardware. Different topics may be offered at different times in a short-course lecture/lab format. Different
+versions of this course may be repeated for credit.San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2646 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Prerequisite(s): Additional Varies with topic
+Pre/Corequisite(s): eligibility for MATH 19
+Grading: Letter Graded
+CS 92 - International Program Studies
+1-6 unit(s)
+Study Abroad and Away transfer credit course. Study Abroad and Away provides students the opportunity to study
+abroad on long term programs (Exchange Programs, CSU International Programs, and International Student
+Exchange Programs) and short-term programs (Faculty-Led Programs and Summer School Abroad Programs) for
+academic credit, offering Alternative Break Programs for cultural immersion, and designing other globally focused
+opportunities. This course is designated as a placeholder course for Study Abroad and Away programs.
+Grading: Mixed Grading
+CS 100W - Technical Writing Workshop
+3 unit(s)
+Advanced writing through preparation of technical reports and presentations. Improving skills for writing subject-
+related reports, project proposals and personal resumes through practice and evaluation. Course assignments will be
+related to issues concerning careers in computer science.
+Satisfies Writing in the Disciplines (WID).
+Prerequisite(s): A3 or equivalent second semester composition course (with a grade of C- or better); completion of
+core GE; satisfaction of Writing Skills Test or completion of ENGL 100A / LLD 100A with C or better; and upper
+division standing. Or Graduate or Postbaccalaureate level.
+Grading: Letter Graded
+Note(s): Must be passed with C or better to satisfy the CSU Graduation Writing Assessment Requirement (GWAR).
+CS 108 - Introduction to Game Studies
+3 unit(s)
+Introduction to the systems, design, history, and cultural analysis of games with emphasis on critical studies,
+development, technological literacy, markets and impact on society.
+Prerequisite(s): Upper division standing or instructor consent.
+Grading: Letter Graded
+Cross-listed with ART 108. Art and Art History is responsible for scheduling.
+CS 116A - Introduction to Computer Graphics
+3 unit(s)
+Vector geometry, geometric transformations and the graphics pipeline. Basic raster graphics algorithms for drawing
+discrete lines, clipping, visible surface determination and shading. Display of curves and surfaces. Graphics data
+structures.
+Prerequisite(s): Prerequisite(s): MATH 31 or MATH 31X, MATH 39, CS 146 (with a grade of "C-" or better in each)
+and previous programming experience in C/C++. Or instructor consent.San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2647 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Grading: Letter Graded
+Cross-listed with SE 116A. Computer Science is responsible for scheduling.
+CS 116B - Computer Graphics Algorithms
+3 unit(s)
+In-depth discussion of algorithms and techniques used in computer graphics and their implementation. Topics
+include: animation, fractals, anti-aliasing, fill algorithms, visible surface algorithms, color and shading, ray tracing,
+radiosity and texture maps. Substantial programming required.
+Prerequisite(s): CS 116A (with a grade of "C-" or better) or instructor consent.
+Grading: Letter Graded
+Note(s): Offered only occasionally.
+Cross-listed with SE 116B. Computer Science is responsible for scheduling.
+CS 122 - Advanced Programming with Python
+3 unit(s)
+Advanced features of the Python programming language with emphasis on programming practice. Course involves
+substantial programming projects in Python.
+Prerequisite(s): CS 146 (with a grade of "C-" or better) or instructor consent.
+Grading: Letter Graded
+CS 123A - Bioinformatics I
+3 unit(s)
+Introduction to algorithms, tools, and databases of Bioinformatics. Biological foundations: central dogma; sequence
+databases; pairwise alignment algorithms and tools; Blast; phylogenetics. Possible additional topics: protein structure,
+multiple sequence alignment, next-gen sequencing, epigenetics, CRISPR. Project applying these approaches to real-
+world problems.
+Prerequisite(s): CS 46B or BIOL 31, or instructor consent. Allowed Declared Majors: Biology, Chemistry, and
+Computer Science.
+Grading: Letter Graded
+Cross-listed with BIOL 123A / SE 123A. Computer Science is responsible for scheduling.
+CS 123B - Bioinformatics II
+3 unit(s)
+Advanced Bioinformatics algorithms, tools, databases. Biological background; protein structure/function; sequencing
+technology; sequence identification; transcriptomics; metagenomics; CRISPR. Possible additional topics: functional
+genomics; protein networks; drug discovery; pathway analysis; immunoinformatics; analysis pipelines; machine
+learning applications. Project applying advanced approaches to real-world problems.
+Prerequisite(s): CS 123A / BIOL 123A / SE 123A.
+Grading: Letter GradedSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2648 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Cross-listed with BIOL 123B / SE 123B. Computer Science is responsible for scheduling.
+CS 131 - Processing Big Data - Tools and Techniques
+3 unit(s)
+In-depth study of essential tools and techniques for processing big data over the UNIX operating system and/or other
+operating systems. On UNIX, it includes using grep, sed, awk, join, and programming advanced shell scripts for
+manipulating big data.
+Prerequisite(s): CS 46B or BIOL 123B with a grade of C- or better. Allowed Declared Majors: Computer Science
+BS, Data Science BS, MS Bioinformatics (MS BI).
+Grading: Letter Graded
+CS 133 - Introduction to Data Visualization
+3 unit(s)
+Topics in data analysis and visualization. Covers tools and techniques to efficiently analyze and visualize large
+volumes of data in meaningful ways to help solve complex problems in fields such as life sciences, business, and
+social sciences.
+Prerequisite(s): CS 146 with a grade of C- or better or CS 22B and graduate standing.
+Grading: Letter Graded
+CS 134 - Computer Game Design and Programming
+3 unit(s)
+Architectures and object-oriented patterns for computer game design. Animation, simulation, user interfaces,
+graphics, and intelligent behaviors. Team projects using an existing game engine framework.
+Prerequisite(s): CS 146 and either CS 151 or CMPE 135 (with a grade of "C-" or better in each); or instructor
+consent.
+Grading: Letter Graded
+Cross-listed with SE 134. Computer Science is responsible for scheduling.
+CS 136 - Introduction to Computer Vision
+3 unit(s)
+Fundamental and advanced Computer Vision algorithms. Basic image processing techniques (image convolution,
+and region and edge detection). Complex vision algorithms for contour detection, depth perception, dynamic vision,
+and object recognition. Core topics (color processing, texture analysis, and visual geometry).
+Prerequisite(s): CS 146, MATH 39, and CS 49C or equivalent (with a grade of "C-" or better in each).
+Grading: Letter Graded
+CS 143C - Numerical Analysis and Scientific Computing
+3 unit(s)
+Development and comparison of important algorithms for scientific computing in terms of efficiency, accuracy and
+reliability. Topics include nonlinear equations, interpolation, approximation theory, differentiation, integration,San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2649 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+differential equations, numerical stability and error analysis. Substantial assignments using contemporary software
+packages and professional subprogram libraries.
+Prerequisite(s): MATH 32 or MATH 32X, one of CS 22A, MATH 50, CS 46A, CS 49C or CS 49J, one of MATH 33A,
+MATH 33LA, or MATH 34 (with a grade of "C-" or better in each); or instructor consent.
+Grading: Letter Graded
+Cross-listed with MATH 143C / METR 143C. Mathematics and Statistics is responsible for scheduling.
+CS 143M - Numerical Analysis and Scientific Computing
+3 unit(s)
+Development and comparison of important algorithms for scientific computing in terms of efficiency, accuracy and
+reliability. Topics include systems of linear equations-direct and iterative methods, least squares problems,
+eigenvalues and eigenvectors, numerical stability and error analysis. Substantial assignments using contemporary
+software packages and professional subprogram libraries.
+Prerequisite(s): MATH 39, one of CS 22A, MATH 50, CS 46A or CS 49C (each with a grade of "C-" or better). Or
+instructor consent.
+Grading: Letter Graded
+Cross-listed with MATH 143M. Mathematics and Statistics is responsible for scheduling.
+CS 144 - Advanced C++ Programming
+3 unit(s)
+Advanced features of C++, including operator overloading, memory management, templates, exceptions, multiple
+inheritance, RTTI, namespaces, tools.
+Prerequisite(s): CS 46B and CS 49C (with a grade of C- or better in each), or equivalent knowledge of object-
+oriented programming and C, or instructor consent.
+Grading: Letter Graded
+CS 146 - Data Structures and Algorithms
+3 unit(s)
+Implementations of advanced tree structures, priority queues, heaps, directed and undirected graphs. Advanced
+searching and sorting (radix sort, heapsort, mergesort, and quicksort). Design and analysis of data structures and
+algorithms. Divide-and-conquer, greedy, and dynamic programming algorithm design techniques.
+Prerequisite(s): MATH 30, MATH 42, CS 49J (or equivalent knowledge of Java), and CS 46B (with a grade of "C-"
+or better in each); Computer Science, Applied and Computational Math, Forensic Science: Digital Evidence, or
+Software Engineering Majors only; or instructor consent.
+Grading: Letter Graded
+CS 147 - Computer Architecture
+3 unit(s)
+Introduction to the basic concepts of computer hardware structure and design, including processors and arithmetic
+logic units, pipelining, and memory hierarchy.San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2650 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Prerequisite(s): CS 47 or CMPE 102 (with a grade of "C-" or better), Computer Science, Applied and Computational
+Math, Forensic Science: Digital Evidence, or Software Engineering majors only; or instructor consent.
+Grading: Letter Graded
+CS 149 - Operating Systems
+3 unit(s)
+Fundamentals: Contiguous and non-contiguous memory management; processor scheduling and interrupts;
+concurrent, mutually exclusive, synchronized and deadlocked processes; parallel computing; files. Substantial
+programming project required.
+Prerequisite(s): CS 47 or CMPE 102 (with a grade of "C-" or better), and CS 146 (with a grade of "C-" or better).
+Allowed Declared Majors: Computer Science, Applied and Computational Math, Forensic Science: Digital Evidence,
+or Software Engineering Majors only; or Instructor Consent.
+Grading: Letter Graded
+CS 151 - Object-Oriented Design
+3 unit(s)
+Design of classes and interfaces. Object-oriented design methodologies and notations. Design patterns. Generics
+and reflection. Exception handling. Concurrent programming. Graphical user interface programming. Software
+engineering concepts and tools. Required team-based programming assignment.
+Prerequisite(s): MATH 42, CS 46B, and CS 49J (or equivalent knowledge of Java) (with a grade of "C-" or better in
+each); Allowed Declared Majors: Computer Science, Applied and Computational Math or Software Engineering. Or
+instructor consent.
+Grading: Letter Graded
+CS 152 - Programming Paradigms
+3 unit(s)
+Programming language syntax and semantics. Data types and type checking. Scope, bindings, and environments.
+Functional and logic programming paradigms, and comparison to other paradigms. Extensive coverage of a
+functional language.
+Prerequisite(s): CS 151 or CMPE 135 (with a grade of "C-" or better); Computer Science, Applied and
+Computational Math or Software Engineering Majors only; or instructor consent.
+Grading: Letter Graded
+Cross-listed with SE 152. Computer Science is responsible for scheduling.
+CS 153 - Concepts of Compiler Design
+3 unit(s)
+Theoretical aspects of compiler design, including parsing context free languages, lexical analysis, translation
+specification and machine-independent code generation. Programming projects to demonstrate design topics.
+Prerequisite(s): CS 47 or CMPE 102, CS 146, and CS 154 (with a grade of "C-" or better in each); Computer
+Science, Applied and Computational Math or Software Engineering majors only; or instructor consent.
+Grading: Letter GradedSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2651 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+1-3 unit(s)
+Individual study in a specific field.
+Prerequisite(s): Department chair consent. Not available to Open University Students
+Grading: Credit/No Credit
+CS 154 - Formal Languages and Computability
+3 unit(s)
+Finite automata, context-free languages, Turing machines, computability.
+Prerequisite(s): MATH 42 or MATH 42X and CS 46B (with a grade of "C-" or better in each); Allowed Declared
+Majors: Computer Science, Applied and Computational Mathematics, or Software Engineering, or instructor consent.
+Grading: Letter Graded
+Cross-listed with SE 154. Computer Science is responsible for scheduling.
+CS 155 - Introduction to the Design and Analysis of Algorithms
+3 unit(s)
+Algorithm design techniques: dynamic programming, greedy algorithms, Euclidean and extended Euclidean
+algorithms, Discrete and Fast Fourier transforms. Analysis of algorithms, intractable problems and NP-completeness.
+Additional topics selected from: selection algorithms and adversary arguments, approximation algorithms, parallel
+algorithms, and randomized algorithms.
+Prerequisite(s): CS 146 (with a grade of "C-" or better) or instructor consent.
+Grading: Letter Graded
+CS 156 - Introduction to Artificial Intelligence
+3 unit(s)
+Basic concepts and techniques of artificial intelligence: problem solving, search, deduction, intelligent agents,
+knowledge representation. Topics chosen from logic programming, game playing, planning, machine learning, natural
+language, neural nets, robotics.
+Prerequisite(s): CS 146 (with a grade of "C-" or better); or instructor consent.
+Grading: Letter Graded
+Cross-listed with SE 156. Computer Science is responsible for scheduling.
+CS 157A - Introduction to Database Management Systems
+3 unit(s)
+Relational data model. Relational algebra. Standard SQL. Design theory. Conceptual data modeling. Integrity
+constraints and triggers. Views and indexes. Transactions. Distributed data management. Interactive and
+programmatic interfaces to database systems. Application programming project using a prominent database system.
+Prerequisite(s): CS 146 (with a grade of "C-" or better); Computer Science, Applied and Computational Math,
+Forensic Science: Digital Evidence, or Software Engineering majors only; or instructor consent.
+Grading: Letter Graded
+CS 157B - Database Management Systems IISan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2652 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+3 unit(s)
+Survey course. Object-oriented data model, definition language, query language. Object relational database systems.
+Database trends like active, temporal, multimedia, deductive databases. Web database topics, namely, architectures,
+introduction to interface languages. Team projects.
+Prerequisite(s): CS 157A (with a grade of "C-" or better); Computer Science, Applied and Computational Math,
+Forensic Science: Digital Evidence, or Software Engineering Majors only; or instructor consent.
+Grading: Letter Graded
+Cross-listed with SE 157B. Computer Science is responsible for scheduling.
+CS 157C - NoSQL Database Systems
+3 unit(s)
+NoSQL Data Models: Key-Value, Wide Column, Document, and Graph Stores. CAP Theorem. Distribution Models.
+Current NoSQL Databases: Configuration and Deployment, CRUD operations, Indexing, Replication, and Sharding.
+Public Data Sets. API Coding and Application Development. NoSQL in the Cloud. Team Project.
+Prerequisite(s): CS 157A with a "C- or better"
+Grading: Letter Graded
+CS 158A - Computer Networks
+3 unit(s)
+Introduction to computer networks, including network layered architectures, local and wide area networks, mobile
+wireless networks, Internet TCP/IP protocol suite, network resource management, network programming, network
+performance, network security, network applications.
+Prerequisite(s): CS 146 and CS 47 (with grades of "C-" or better); or instructor consent.
+Grading: Letter Graded
+CS 158B - Computer Network Management
+3 unit(s)
+Principles and technologies of network management: reference models, functions (fault, configuration, performance,
+security and accounting management), management information, communication protocols, integration, and
+assessment. Network security and cyber defense: cryptography, key distribution, authentication protocols, network
+attacks, access control, and example systems.
+Prerequisite(s): CS 158A or CMPE 148 (with a grade of "C-" or better), or instructor consent
+Grading: Letter Graded
+Cross-listed with SE 158B. Computer Science is responsible for scheduling.
+CS 159 - Introduction to Parallel Processing
+3 unit(s)
+Major parallel architectures: shared memory, distributed memory, SIMD, MIMD. Parallel algorithms: techniques for
+scientific applications, measures of performance. Parallel programming: principles and implementations in various
+languages. Assignments on available parallel and vector computers.San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2653 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Prerequisite(s): CS 146 (with a grade of "C-" or better); Computer Science, Applied and Computational Math, or
+Software Engineering Majors only; or instructor consent.
+Grading: Letter Graded
+CS 160 - Software Engineering
+3 unit(s)
+Software engineering principles, software process and process models, requirements elicitation and analysis, design,
+configuration management, quality control, project planning, social and ethical issues. Required team-based software
+development, including written requirements specification and design documentation, oral presentation, and tool use.
+Prerequisite(s): CS 146, CS 151 (with a grade of "C-" or better in each); CS 100W (with a grade of "C" or better) or
+instructor consent. Computer Science, Forensic Science: Digital Evidence, or Software Engineering Majors only.
+Grading: Letter Graded
+CS 161 - Software Project
+3 unit(s)
+A substantial project based on material from an advanced area of computer science. Includes lectures on the project
+topic and the design and testing of software systems. At least 50% of the course grade to be based on the project.
+Prerequisite(s): CS 160 (with a grade of "C-" or better) or instructor consent. Computer Science and Software
+Engineering Majors only.
+Grading: Letter Graded
+CS 163 - Data Science Senior Project
+3 unit(s)
+Semester-long individual or team project. Apply knowledge and technology to solve a realistic data science problem,
+including the entire process of collecting and processing real-world data, applying suitable analytic methods,
+explaining analysis outcomes, and making appropriate recommendations.
+Prerequisite(s): CS 100W, CS 131, and either CS 156 or CS 171.
+Grading: Letter Graded
+CS 166 - Information Security
+3 unit(s)
+Fundamental security topics including cryptography, authentication, access control, network security, security
+protocols, and software security. Networking basics are covered. Additional security topics selected from multilevel
+security, biometrics, blockchain, machine learning, information warfare, e-commerce, intrusion detection, system
+evaluation and assurance.
+Prerequisite(s): CS 146 (with a grade of "C-" or better) and either CS 47 or CMPE 102 or CMPE 120 (with a grade
+of "C-" or better); Computer Science, Applied and Computational Math, Forensic Science: Digital Evidence, or
+Software Engineering Majors only; or instructor consent.
+Grading: Letter Graded
+CS 168 - Blockchain and CryptocurrenciesSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2654 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+3 unit(s)
+Cryptocurrencies and the blockchain. Centralized clearinghouse solutions vs. distributed consensus solutions. The
+blockchain and its validation approaches: proof-of-work, proof-of-stake, proof-of-storage, etc. Cryptocurrency wallets.
+Smart contracts.
+Prerequisite(s): CS 166 (with a grade of C- or better) or instructor consent.
+Grading: Letter Graded
+CS 171 - Introduction to Machine Learning
+3 unit(s)
+Covers a selection of classic machine learning techniques including backpropagation and several currently popular
+neural networking and deep learning architectures. Hands-on lab exercises are a significant part of the course. A
+major project is required.
+Prerequisite(s): CS 146 (with a grade of C- or better).
+Grading: Letter Graded
+CS 174 - Server-side Web Programming
+3 unit(s)
+Development and deployment of multi-tier web-based applications. Introduction to HTML, XML, enterprise design
+patterns, web services and database access.
+Prerequisite(s): CS 46B (with a grade of "C-" or better); Computer Science, Applied and Computational Math, or
+Software Engineering Majors only.
+Grading: Letter Graded
+Cross-listed with SE 174. Computer Science is responsible for scheduling.
+CS 175 - Mobile Device Development
+3 unit(s)
+Mobile Platform APIs including those for networking, touch, graphics, data, location, and camera. Testing and
+profiling on devices and emulators/simulators.
+Prerequisite(s): CS 47, and knowledge of Java equivalent to that of CS 46A or CS 49J
+Grading: Letter Graded
+CS 176 - Introduction to Social Network Analysis
+3 unit(s)
+The Web and social networks are complex networks. We study them by unifying tools from different disciplines:
+computer science, economics, and social sciences. Topics include graph theory, information networks, search,
+advertisement, auctions.
+Prerequisite(s): CS 146 (with a grade of C-); or instructor consent.
+Grading: Letter Graded
+CS 180 - Individual StudiesSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2655 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+1-3 unit(s)
+Individual study in a specific field.
+Prerequisite(s): Department chair consent. Not available to Open University Students
+Grading: Credit/No Credit
+CS 180H - Individual Studies for Honors
+3 unit(s)
+Senior project on advanced topics in computer science as determined by the instructor. Written paper or oral
+presentation of the project required. Intended for students graduating with departmental honors.
+Prerequisite(s): At least junior standing as computer science major. GPA of 3.5 or higher in the major and
+department chair consent.
+Grading: Credit/No Credit
+CS 185A - Advanced Practical Computing Topics
+1 unit(s)
+Computing topics of current interest in industrial practice. Emphasis on effective use and integration of
+software/hardware. Different topics may be offered at different times in a short-course lecture/lab format and may be
+repeated for credit.
+Prerequisite(s): Varies with topic
+Grading: Credit/No Credit
+CS 185C - Advanced Practical Computing Topics
+3 unit(s)
+Computing topics of current interest in industrial practice. Emphasis on effective use and integration of
+software/hardware. Different topics may be offered at different times in a short-course lecture/lab format and may be
+repeated for credit.
+Prerequisite(s): Varies with topic.
+Grading: Letter Graded
+CS 190 - Internship Project
+1 unit(s)
+Work on an approved semester-long paid project at an industrial site. Meet once per week on campus. Progress
+reports, oral presentations, final report, and evaluation by project supervisor will be used to demonstrate the
+acquisition of skills identified as goals prior to the start of the assignment.
+Course may be repeated for credit for up to 3 units.
+Prerequisite(s): CS 146 (with a grade of "C-" or better) or graduate standing, selection by a company, and instructor
+consent
+Grading: Letter Graded
+CS 190I - Internship ProjectSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2656 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+3 unit(s)
+Work on an approved semester-long paid project at an industrial site. Meet once per week on campus. Progress
+reports, oral presentations, final report, and evaluation by project supervisor will be used to demonstrate the
+acquisition of skills identified as goals prior to the start of the assignment.
+Prerequisite(s): CS 146 (with a grade of "C-" or better) or graduate standing, selection by a company, and instructor
+consent.
+Grading: Letter Graded
+CS 192 - International Program Studies
+1-6 unit(s)
+Study Abroad and Away transfer credit course. Study Abroad and Away provides students the opportunity to study
+abroad on long term programs (Exchange Programs, CSU International Programs, and International Student
+Exchange Programs) and short-term programs (Faculty-Led Programs and Summer School Abroad Programs) for
+academic credit, offering Alternative Break Programs for cultural immersion, and designing other globally focused
+opportunities. This course is designated as a placeholder course for Study Abroad and Away programs.
+Grading: Mixed Grading
+CS 200W - Graduate Technical Writing
+3 unit(s)
+Graduate technical writing workshop to develop advanced communication skills that will meet the professional needs
+of computer scientists, along with research methodologies and proper documentation for the master's thesis project.
+Satisfies GWAR: Graduation Writing Assessment Requirement.
+Prerequisite(s): Graduate standing. Allowed Declared Major: Bioinformatics, Computer Science, Data Science,
+Mathematics, or Statistics. Or instructor consent.
+Grading: Letter Graded
+Note(s): This course satisfies graduate-level GWAR in this master's program. This course does NOT satisfy the
+undergraduate GE Area Z requirement.
+CS 218 - Topics in Cloud Computing
+3 unit(s)
+Topics in cloud computing, including distributed system models, virtual machines, virtualization, cloud platform
+architectures (IaaS, PaaS, SaaS), service-oriented architectures, cloud programming and software environments,
+peer-to-peer computing, ubiquitous cloud, cloud security and trust management.
+Prerequisite(s): CS 149 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 223 - Bioinformatics
+3 unit(s)
+The course investigates the main algorithms for solving computational problems in bioinformatics. Methods will
+include Hidden Markov Models for gene prediction and protein profiling, and Genetic Algorithms for biologicalSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2657 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+sequence analysis and structure prediction. Students will be given programming projects.
+Prerequisite(s): BIOL 123B / CS 123B / SE 123B. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science.
+Grading: Letter Graded
+CS 224 - Next Generation Sequencing & Genome Assembly
+3 unit(s)
+Genomic concepts and methods with a focus on Next Generation Sequencing (NGS) are presented. The practice and
+methods of collecting, analyzing, and assembling DNA and RNA sequences using de novo and reference-based
+methods along with variant calling are also presented.
+Prerequisite(s): BIOL 123B and MATH 162 or CS 156 or CS 171, or instructor consent. Graduate Standing. Allowed
+Declared Major: Computer Science, Bioinformatics, and Data Science.
+Grading: Letter Graded
+CS 225 - Topics in Sequence-based Machine Learning for Bioinformatics
+3 unit(s)
+A study of recent advances in machine learning methods with applications to solving sequence analysis problems in
+molecular biology. The methods examined include word embeddings, vector space representations, language
+models, and deep learning architectures. A substantial course project is required.
+Prerequisite(s): BIOL 123B and MATH 162 or CS 156 or CS 171, or instructor consent. Graduate standing. Allowed
+Declared Major: MS Computer Science, MS Bioinformatics, MS Data Science.
+Grading: Letter Graded
+CS 235 - User Interface Design
+3 unit(s)
+Human-computer interaction principles. Direct manipulation, focus plus context, interaction history; interfaces for
+websites and website collections; usability testing; role of metaphors; case studies; advanced topics include
+information visualization, interfaces for collaboration, intelligent interfaces, and software agents.
+Prerequisite(s): CS 130 or CS 116A, and Graduate standing. Allowed Declared Major: Computer Science,
+Bioinformatics, Data Science. Or instructor consent.
+Grading: Letter Graded
+CS 243B - Advanced Topics in Numerical Analysis
+3 unit(s)
+Advanced topics in numerical methods.
+Prerequisite(s): MATH 143C or MATH 143M; and Graduate standing. Allowed Declared Major: Computer Science,
+Bioinformatics, Data Science. Or instructor consent.
+Grading: Letter Graded
+Note(s): Alternate years.
+Cross-listed with MATH 243B . Mathematics and Statistics is responsible for scheduling.San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2658 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+CS 247 - Advanced Computer Architecture
+3 unit(s)
+Advanced topics in vector architectures, including: pipelined architectures, dataflow computers, VLSI architectures,
+butterfly connections; bus and memory architectures; cache structures; hardware implementations of algorithms.
+Prerequisite(s): CS 147, CS 149, and Graduate standing. Allowed Declared Major: Computer Science,
+Bioinformatics, Data Science. Or instructor consent.
+Grading: Letter Graded
+CS 249 - Distributed Computing
+3 unit(s)
+Current issues in operating systems, including multiprocessor systems and distributed computing, networks, security
+and performance. Case studies of current operating systems.
+Prerequisite(s): CS 149 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 251 - Obj Oriented Anlys
+3 unit(s)
+Introduction to important concepts, activities, and artifacts of the analysis and design phases of object-oriented
+software development. Use of CASE tools, UML, and pattern catalogs to build requirements models, domain models,
+design models, and reusable frameworks for a variety of software systems.
+Prerequisite(s): CS 160 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 251A - Object-Oriented Analysis
+3 unit(s)
+Emphasizes the important concepts, activities, and artifacts of the analysis phase of object-oriented software
+development. CASE tools and UML are used to model application domain data, workflows, system requirements,
+deployment, and life cycles.
+Prerequisite(s): CS 160 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 251B - Object-Oriented Design
+3 unit(s)
+Course covers important concepts, activities, and artifacts of the design phase of object-oriented software
+development. Topics include design metrics, design patterns, refactoring, frameworks, and testing.
+Prerequisite(s): CS 160 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter GradedSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2659 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+CS 252 - Advanced Programming Language Principles
+3 unit(s)
+Language design and paradigms, including concepts underlying functional, logic, object-oriented and parallel
+paradigms. Theoretical foundations, including lambda calculus, denotational and axiomatic semantics. Proofs of
+program correctness. Programming projects emphasizing different aspects of language design.
+Prerequisite(s): CS 152 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 254 - Theory of Computation
+3 unit(s)
+Models of computation; decidability; complexity measures; hierarchies; P, NP and other complexity classes;
+intractable problems.
+Prerequisite(s): CS 154 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 255 - Design and Analysis of Algorithms
+3 unit(s)
+Randomized algorithms. Parallel algorithms. Distributed algorithms. NP-completeness of particular problems.
+Approximation algorithms.
+Prerequisite(s): CS 155 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 256 - Topics in Artificial Intelligence
+3 unit(s)
+Introduction to topics in artificial intelligence such as problem solving methods, game playing, understanding natural
+languages, pattern recognition, computer vision and the general problem of representing knowledge. Students will be
+expected to use LISP.
+Prerequisite(s): CS 156 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 257 - Database System Principles
+3 unit(s)
+Design management and performance issues on: file organization and access methods, buffer management and
+storage management. Query processing and query optimization, transaction management, recovery, and
+concurrency control techniques. Reliability, protection and integrity techniques. Extensive programming project.
+Prerequisite(s): CS 157B and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, DataSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2660 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 258 - Computer Communication Systems
+3 unit(s)
+Design, analysis and survey of the latest advancements in network and Internet technologies, such as supporting
+TCP/IP over various network media, software-defined networks, networks supporting cloud computing, network
+security, peer-to-peer and overlay networks, and quality of services.
+Prerequisite(s): CS 158A and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 259 - Advanced Parallel Processing
+3 unit(s)
+An advanced hardware architecture and software development class focused on multi-threaded, parallel processing
+algorithms and techniques. A study of high-performance parallel hardware architectures and parallel programming
+languages. Applications of parallel and GPU processing, including computer gaming.
+Prerequisite(s): Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data Science. Or
+instructor consent.
+Grading: Letter Graded
+CS 262 - Randomized Algorithms and Applications
+3 unit(s)
+Design and analysis of algorithms which incorporate randomness in their design. Applications will be given in several
+of the following areas: data structures, pattern matching, cryptography, parallel computing, distributed computing, and
+interactive proof systems.
+Prerequisite(s): CS 154 or CS 155, and Graduate standing. Allowed Declared Major: Computer Science,
+Bioinformatics, Data Science. Or instructor consent.
+Grading: Letter Graded
+CS 265 - Cryptography and Computer Security
+3 unit(s)
+Security mechanisms for protecting information in computer systems and networks. Includes cryptography and its
+applications to security services in distributed systems, mathematics of cryptography, access control, protection
+models, security policies, design of secure systems, firewalls, and intrusion detection.
+Prerequisite(s): CS 149 andCS 166, or instructor consent. Graduate standing. Allowed Declared Major: Computer
+Science MS, Bioinformatics MS, and Data Science MS.
+Grading: Letter Graded
+CS 266 - Topics in Information Security
+3 unit(s)
+Advanced topics in the area of information security. Content differs with each offering. Possible topics include, but areSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2661 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+not restricted to: Network Security, Software Reverse Engineering and Cryptanalysis.
+Prerequisite(s): CS 166 and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 267 - Topics in Database Systems
+3 unit(s)
+Advanced topics in the area of database and information systems. Content differs in each offering. Possible topics
+include though not restricted to: Data Mining, Distributed Databases and Transaction Processing.
+Prerequisite(s): CS 157B and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 268 - Topics in Wireless Mobile Networking
+3 unit(s)
+Advanced topics in the area of wireless mobile networking. Content may differ in each offering. Possible topics
+include though not restricted to: wireless local and metropolitan area networks, mobile Internet, sensor networks,
+mobile computing, wireless network security. Repeatable when topic changes.
+Prerequisite(s): CS 158A and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 271 - Topics in Machine Learning
+3 unit(s)
+Variable topics in machine learning. Content may include hidden Markov models, principal component analysis,
+support vector machines, clustering, boosting, random forests, neural networks, and deep learning. Relevant
+applications will be covered.
+Prerequisite(s): CS 157A. Graduate standing. Allowed Declared Major: MS in Computer Science, Bioinformatics,
+Data Science. Or instructor consent.
+Grading: Letter Graded
+CS 272 - Reinforcement Learning and Sequential Decision Making
+3 unit(s)
+Introduction to reinforcement learning, deep reinforcement learning, other online learning algorithms, and their
+applications.
+Prerequisite(s): CS 157A. Allowed Declared Major: MS in Computer Science, Bioinformatics, Data Science.
+Grading: Letter Graded
+CS 274 - Topics in Web Intelligence
+3 unit(s)
+Topics in web intelligence including finding similar items, mining data streams, link analysis, frequent itemsets,San Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2662 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+advertising on the web, recommender systems, and mining social-network graphs. Relevant applications will be
+covered. Significant programming project is required.
+Prerequisite(s): CS 157A and Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data
+Science. Or instructor consent.
+Grading: Letter Graded
+CS 280 - Graduate Individual Studies
+1-3 unit(s)
+Individual study in specific field.
+Prerequisite(s): Department chair consent. Not available to Open University Students
+Grading: Credit/No Credit
+CS 286 - Advanced Topics in Computer Science
+3 unit(s)
+Selected topics in computer science. Topics vary each semester and may be repeated for a maximum of 6 units.
+Course may be repeated for credit for up to 6 units.
+Prerequisite(s): Suitable upper division background in mathematics and computer science as set by
+instructor. Graduate standing. Allowed Declared Major: Computer Science, Bioinformatics, Data Science. Or
+instructor consent.
+Grading: Letter Graded
+CS 297 - Preparation for Writing Project or Thesis
+3 unit(s)
+Supervised individual research and project work to prepare for a master's writing project or thesis.
+Prerequisite(s): Fully classified standing in the MS Computer Science, MS Bioinformatics, or MS Data Science
+program, department chair consent. Not available to Open University Students.
+Grading: Credit/No Credit
+CS 298 - Master's Writing Project
+3 unit(s)
+Prerequisite(s): CS 297 or CS 240, and department chair consent and admission to candidacy for the MS degree.
+Not available to Open University Students.
+Grading: Mandatory Credit/No Credit/RP
+CS 298B - Bioinformatics Master's Project
+3 unit(s)
+Supervised individual research of an advanced character for the completion of the masters project.
+Course may be repeated for credit for up to 3 units.
+Prerequisite(s): Fully classified standing in the MS in Bioinformatics program and department chair consent. NotSan Jose State University
+2022-2023 Academic CatalogPrinted July 5, 2022Page 2663 of 2934Visit Online Catalog (catalog.sjsu.edu)
+for most recenty copy with hyperlinks.
+available to Open University Students.
+Grading: Mandatory Credit/No Credit/RP
+CS 299 - Master's Thesis
+3 unit(s)
+Prerequisite(s): CS 297 and department chair consent and admission to candidacy for the MS degree. Not available
+to Open University Students.
+Grading: Mandatory Credit/No Credit/RP

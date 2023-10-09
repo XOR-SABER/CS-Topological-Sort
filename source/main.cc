@@ -17,7 +17,10 @@ int main() {
         case 2:
             choice = "Files/MCST.txt";
             break;
-        case 3: 
+        case 3:
+            choice = "Files/SJSUCS.txt";
+            break;
+        case 4: 
             std::cout << "exiting the program..\n";
             running = false;
             break;

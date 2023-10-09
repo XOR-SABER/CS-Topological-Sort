@@ -149,6 +149,7 @@ void Catalog::menu() {
         std::cout << "3. Topologically sort prereqs for class\n";
         std::cout << "4. Print out the graph\n";
         std::cout << "5. To exit the program and select another institution\n";
+        std::cout << "6. Add to a catalog..\n" << std::endl;
         int choice = read(": ");  
         switch (choice)
         {
@@ -156,11 +157,8 @@ void Catalog::menu() {
             std::cout << "\n1. Search by ID\n";
             std::cout << "2. Search by Title\n";
             choice = read(": ");
-            if(choice == 1) {
-                course_search_id();
-            } else {
-                course_search_title();
-            }
+            if(choice == 1) course_search_id();
+            else course_search_title();
             break;
         case 2:
             get_stats(lowest_weight, highest_weight);
@@ -175,6 +173,8 @@ void Catalog::menu() {
             break;
         case 5:
             is_running = false;
+            break;
+        case 6:
             break;
         default:
             std::cout << "Invalid Option... \n";

@@ -4,4 +4,37 @@ Prerequisite:
 Introduction to programming for anyone new to the field or who needs a refresher with basic Java programming syntax, object-oriented paradigm, control structures, iteration, etc. Hands-on activities in writing, compiling, executing, and debugging programs for solving real-world problems. 
 Units 4
 
-WIP
+MATH-19 Precalculus 
+Prerequisite:
+Preparation for calculus: polynomial, rational, exponential, logarithmic and trigonometric functions; analytic geometry.
+Units 5
+
+MATH-30 Calculus I
+Prerequisite: MATH-19
+Introduction to calculus including limits, continuity, differentiation, applications and introduction to integration. Graphical, algebraic and numerical methods of solving problems.
+Units 4
+
+MATH-31 Calculus II 
+Prerequisite: MATH-30
+Definite and indefinite integration with applications. Sequences and series. Graphical, algebraic and numerical methods of solving problems.
+Units 4
+
+MATH-39 Linear Algebra 
+Prerequisite: MATH-31
+Matrices, systems of linear equations, vector geometry, matrix transformations, determinants, eigenvectors and eigenvalues, orthogonality, diagonalization, applications, computer exercises. Theory in Rn emphasized; general real vector spaces and linear transformations introduced. Prerequisite: MATH-31
+Units 4
+
+MATH-42 Discrete Mathematics
+Prerequisite: MATH-19
+Sets, logic, methods of proof including mathematical induction, functions, relations, elementary combinatorics, probability, Boolean algebras. 
+Units 3
+
+PHIL-134 Computers, Ethics and Society
+Prerequisite:
+The nature of privacy in a technologically interconnected world; the role of computer technologies in the exercise of the human intellect and imagination with respect to freedom of expression and the social good; rights and responsibilities of intellectual property ownership.
+Units 3
+
+CS-46A Introduction to Programming
+Prerequisite:
+Introduction to programming for anyone new to the field or who needs a refresher with basic Java programming syntax, object-oriented paradigm, control structures, iteration, etc. Hands-on activities in writing, compiling, executing, and debugging programs for solving real-world problems. 
+Units 4

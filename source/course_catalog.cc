@@ -1,8 +1,6 @@
 #include "headers/course_catalog.hpp"
 
-//Just a neat macro set up for file not
-#define FILE_NOT_FOUND std::cout << "File not found, exiting program.. \n", exit(0)
-#define COURSE_NOT_FOUND std::cout << "Course not found.. \n"
+
 
 //This abstracts out the format function, using templates. 
 // if the vector is {"CSCI-1", "CSCI-40", "CSCI-41"} returns "CSCI-1 -> CSCI-40 -> CSCI-41"
@@ -184,18 +182,6 @@ void Catalog::menu() {
 }
 
 //This abstracts out the format function, using templates. 
-template<typename Container, 
-         typename = std::enable_if_t<std::is_same_v<typename Container::value_type, 
-         std::string>>>
-    void Catalog::print_titles(const Container& c) {
-    for(const std::string& str : c) {
-            std::optional<Course> check = get(str);
-            if(check.has_value()) std::cout << check.value().course_id 
-            << " : " << check.value().course_name << std::endl;
-            else COURSE_NOT_FOUND;
-        }
-}
-
 void Catalog::course_search_title() {
     std::cout << std::endl;
     const std::string course_title = read("Please type in a Course Title: ");

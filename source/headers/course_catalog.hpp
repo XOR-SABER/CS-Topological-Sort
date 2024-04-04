@@ -8,6 +8,10 @@
 #include "Course.hpp"
 #include "trie.hpp"
 
+//Just a neat macro set up for file not
+#define FILE_NOT_FOUND std::cout << "File not found, exiting program.. \n", exit(0)
+#define COURSE_NOT_FOUND std::cout << "Course not found.. \n"
+
 class Catalog {
 private:
     // So a entry in the hash table would be {CSCI-40, 0} 
@@ -21,10 +25,19 @@ protected:
     // Ok, I know what I was doing here, and yeah it was kinda smart. 
     // Using private methods to do the actual methods, and public being a accessible alliases.
     // We call this in list_all_prereqs
+
+    //This abstracts out the format function, using templates. 
     template<typename Container, 
          typename = std::enable_if_t<std::is_same_v<typename Container::value_type, 
          std::string>>>
-    void print_titles(const Container&);
+    void print_titles(const Container& c) {
+        for(const std::string& str : c) {
+            std::optional<Course> check = get(str);
+            if(check.has_value()) std::cout << check.value().course_id 
+            << " : " << check.value().course_name << std::endl;
+            else COURSE_NOT_FOUND;
+        }
+    }
     void insert_title(std::string, const std::string&);
     void find_prereqs(std::vector<std::string>&, const std::string&, std::unordered_set<std::string>&);
 public:

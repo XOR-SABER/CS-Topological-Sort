@@ -6,6 +6,7 @@
 #include <string>
 #include <iostream>
 #include <sstream>
+#include <cstdint>
 
 //Custom headers
 #include "read.h"

@@ -1,8 +1,4 @@
 San Jose State University
-CS-46A Introduction to Programming
-Prerequisite:
-Introduction to programming for anyone new to the field or who needs a refresher with basic Java programming syntax, object-oriented paradigm, control structures, iteration, etc. Hands-on activities in writing, compiling, executing, and debugging programs for solving real-world problems. 
-Units 4
 
 MATH-19 Precalculus 
 Prerequisite:
@@ -34,7 +30,162 @@ Prerequisite:
 The nature of privacy in a technologically interconnected world; the role of computer technologies in the exercise of the human intellect and imagination with respect to freedom of expression and the social good; rights and responsibilities of intellectual property ownership.
 Units 3
 
+CS-22A Python for Everyone
+Prerequisite: 
+Introduction to Python programming in interesting, relevant, and practical contexts. Programming skills are developed to solve problems in such fields as life sciences, mathematics, and business. Fundamental programming constructs: data structures and algorithms, iterations, and functions. Course is intended for students who have no prior programming experience.
+Units: 3
+
+CS-22B Python Programming for Data Analysis
+Prerequisite: CS-22A
+Hands-on Python programming skills for data analysis. Skills include finding a solution for a given problem and casting it as an algorithm, translating an algorithm to executable code, and debugging and testing code. Applications focus on computational techniques to understand, analyze, and visualize data.
+Units: 3
+
+CS-25 The Digital World and Society
+Prerequisite: 
+The secure, effective, and ethical use of information technology. The effect of such technology on people and institutions. Technology-related challenges to society and policy. Frameworks for the analysis of information technology with respect to its cultural, historical, environmental, and spatial contexts.
+Units: 3
+
+CS-40 Introduction to Computers
+Prerequisite: 
+For students with little or no computer experience. Topics include: history of computing, user interfaces, computer applications, programming, hardware and software, computer networks.
+Units: 3
+
+CS-42 Discrete Mathematics
+Prerequisite: MATH-19
+Sets, logic, methods of proof including mathematical induction, functions, relations, elementary combinatorics, probability, Boolean algebras.
+Units: 3
+
 CS-46A Introduction to Programming
 Prerequisite:
-Introduction to programming for anyone new to the field or who needs a refresher with basic Java programming syntax, object-oriented paradigm, control structures, iteration, etc. Hands-on activities in writing, compiling, executing, and debugging programs for solving real-world problems. 
-Units 4
+Basic skills and concepts of computer programming in an object-oriented approach using Java. Classes, methods, and argument passing, control structures, iteration. Basic graphical user interface programming. Problem solving, class discovery, and stepwise refinement. Programming and documentation style. Weekly hands-on activity.
+Units: 4
+
+CS-46B Introduction to Data Structures
+Prerequisite: CS-46A CS-49J MATH-19
+Stacks and queues, recursion, lists, dynamic arrays, binary search trees. Iteration over collections. Hashing. Searching, elementary sorting. Big-O notation. Standard collection classes. Weekly hands-on activity.
+Units: 4
+
+CS-47 Introduction to Computer Systems
+Prerequisite: CS-42 MATH-42 CS-42X MATH-42X CS-46B 
+Instruction sets, assembly language and assemblers, linkers and loaders, data representation and manipulation, interrupts, pointers, function calls, argument passing, and basic gate-level digital logic design.
+Units: 3
+
+CS-49C Programming in C
+Prerequisite:
+Beginning course in the C language.
+Units: 3
+
+CS-49J Programming in Java
+Prerequisite:
+Introduction to the Java programming language and libraries. Topics include fundamental data types and control structures, object-oriented programming, string processing, input/output, and error handling. Use of Java libraries for mathematics, graphics, collections, and for user interfaces.
+Units: 3
+
+CS-50 Scientific Computing I
+Prerequisite: MATH-30 or MATH-30X
+Computer systems and structured programming, emphasizing solutions of problems in the atmospheric sciences using Python programming. Includes the UNIX operating system, mass data handling, and data visualization. Lecture 1 hour/lab 3 hours.
+Units: 2
+
+CS-85A Practical Computing Topics
+Prerequisite: Varies with topic.
+Computing topics of current interest in industrial practice. Emphasis on effective use and integration of software/hardware. Different topics may be offered at different times in a short-course lecture/lab format. Different versions of this course may be repeated for credit.
+Units: 1
+
+CS-85C Practical Computing Topics
+Prerequisite: MATH-19
+Computing topics of current interest in industrial practice. Emphasis on effective use and integration of software/hardware. Different topics may be offered at different times in a short-course lecture/lab format. Different versions of this course may be repeated for credit.
+Units: 3
+
+CS-92 International Program Studies
+Study Abroad and Away transfer credit course. Study Abroad and Away provides students the opportunity to study abroad on long-term programs (Exchange Programs, CSU International Programs, and International Student Exchange Programs) and short-term programs (Faculty-Led Programs and Summer School Abroad Programs) for academic credit, offering Alternative Break Programs for cultural immersion, and designing other globally focused opportunities.
+Prerequisite:
+Units: 1-6
+
+CS-100W Technical Writing Workshop
+Advanced writing through preparation of technical reports and presentations. Improving skills for writing subject-related reports, project proposals, and personal resumes through practice and evaluation. Course assignments will be related to issues concerning careers in computer science.
+Prerequisite:
+Units: 3
+
+CS-108 Introduction to Game Studies
+Introduction to the systems, design, history, and cultural analysis of games with emphasis on critical studies, development, technological literacy, markets, and impact on society.
+Prerequisite: Upper division standing or instructor consent.
+Units: 3
+
+CS-116A Introduction to Computer Graphics
+Vector geometry, geometric transformations and the graphics pipeline. Basic raster graphics algorithms for drawing discrete lines, clipping, visible surface determination, and shading. Display of curves and surfaces. Graphics data structures.
+Prerequisite: MATH-31 MATH-39 CS-146
+Units: 3
+
+CS-116B Computer Graphics Algorithms
+In-depth discussion of algorithms and techniques used in computer graphics and their implementation. Topics include animation, fractals, anti-aliasing, fill algorithms, visible surface algorithms, color and shading, ray tracing, radiosity, and texture maps. Substantial programming required.
+Prerequisite: CS-116A
+Units: 3
+
+CS-122 Advanced Programming with Python
+Advanced features of the Python programming language with emphasis on programming practice. Course involves substantial programming projects in Python.
+Prerequisite: CS-146
+Units: 3
+
+CS-123A Bioinformatics I
+Introduction to algorithms, tools, and databases of Bioinformatics. Biological foundations: central dogma; sequence databases; pairwise alignment algorithms and tools; Blast; phylogenetics. Possible additional topics: protein structure, multiple sequence alignment, next-gen sequencing, epigenetics, CRISPR. Project applying these approaches to real-world problems.
+Prerequisite: CS-46B
+Units: 3
+
+CS-123B Bioinformatics II
+Advanced Bioinformatics algorithms, tools, databases. Biological background; protein structure/function; sequencing technology; sequence identification; transcriptomics; metagenomics; CRISPR. Possible additional topics: functional genomics; protein networks; drug discovery; pathway analysis; immunoinformatics; analysis pipelines; machine learning applications. Project applying advanced approaches to real-world problems.
+Prerequisite: CS-123A
+Units: 3
+
+CS-131 Processing Big Data - Tools and Techniques
+In-depth study of essential tools and techniques for processing big data over the UNIX operating system and/or other operating systems. On UNIX, it includes using grep, sed, awk, join, and programming advanced shell scripts for manipulating big data.
+Prerequisite: CS-46B
+Units: 3
+
+CS-133 Introduction to Data Visualization
+Topics in data analysis and visualization. Covers tools and techniques to efficiently analyze and visualize large volumes of data in meaningful ways to help solve complex problems in fields such as life sciences, business, and social sciences.
+Prerequisite: CS-146
+Units: 3
+
+CS-134 Computer Game Design and Programming
+Architectures and object-oriented patterns for computer game design. Animation, simulation, user interfaces, graphics, and intelligent behaviors. Team projects using an existing game engine framework.
+Prerequisite: CS-146 CS-151 CMPE-135
+Units: 3
+
+CS-136 Introduction to Computer Vision
+Fundamental and advanced Computer Vision algorithms. Basic image processing techniques (image convolution, and region and edge detection). Complex vision algorithms for contour detection, depth perception, dynamic vision, and object recognition. Core topics (color processing, texture analysis, and visual geometry).
+Prerequisite: CS-146 MATH-39 CS-49C
+Units: 3
+
+CS-143C Numerical Analysis and Scientific Computing
+Development and comparison of important algorithms for scientific computing in terms of efficiency, accuracy and reliability. Topics include nonlinear equations, interpolation, approximation theory, differentiation, integration, differential equations, numerical stability and error analysis. Substantial assignments using contemporary software packages and professional subprogram libraries.
+Prerequisite: MATH-32, CS-22A, MATH-50, CS-46A
+Units: 3
+
+CS-143M Numerical Analysis and Scientific Computing
+Development and comparison of important algorithms for scientific computing in terms of efficiency, accuracy and reliability. Topics include systems of linear equations-direct and iterative methods, least squares problems, eigenvalues and eigenvectors, numerical stability and error analysis. Substantial assignments using contemporary software packages and professional subprogram libraries.
+Prerequisite: MATH-39 CS-22A MATH-50 CS-46A CS-49C
+Units: 3
+
+CS-144 Advanced C++ Programming
+Advanced features of C++, including operator overloading, memory management, templates, exceptions, multiple inheritance, RTTI, namespaces, tools.
+Prerequisite: CS 46B and CS 49C (with a grade of C- or better in each), or equivalent knowledge of object-oriented programming and C, or instructor consent.
+Units: 3
+
+CS-146 Data Structures and Algorithms
+Implementations of advanced tree structures, priority queues, heaps, directed and undirected graphs. Advanced searching and sorting (radix sort, heapsort, mergesort, and quicksort). Design and analysis of data structures and algorithms. Divide-and-conquer, greedy, and dynamic programming algorithm design techniques.
+Prerequisite: MATH 30, MATH 42, CS 49J (or equivalent knowledge of Java), and CS 46B (with a grade of "C-" or better in each); Computer Science, Applied and Computational Math, Forensic Science: Digital Evidence, or Software Engineering Majors only; or instructor consent.
+Units: 3
+
+CS-147 Computer Architecture
+Introduction to the basic concepts of computer hardware structure and design, including processors and arithmetic logic units, pipelining, and memory hierarchy.
+Prerequisite: CS 47 or CMPE 102 (with a grade of "C-" or better), Computer Science, Applied and Computational Math, Forensic Science: Digital Evidence, or Software Engineering majors only; or instructor consent.
+Units: 3
+
+CS-149 Operating Systems
+Fundamentals: Contiguous and non-contiguous memory management; processor scheduling and interrupts; concurrent, mutually exclusive, synchronized and deadlocked processes; parallel computing; files. Substantial programming project required.
+Prerequisite: CS 47 or CMPE 102 (with a grade of "C-" or better), and CS 146 (with a grade of "C-" or better). Allowed Declared Majors: Computer Science, Applied and Computational Math, Forensic Science: Digital Evidence, or Software Engineering Majors only; or Instructor Consent.
+Units: 3
+
+CS-151 Object-Oriented Design
+Design of classes and interfaces. Object-oriented design methodologies and notations. Design patterns. Generics and reflection. Exception handling. Concurrent programming. Graphical user interface programming. Software engineering concepts and tools. Required team-based programming assignment.
+Prerequisite: MATH 42, CS 46B, and CS 49J (or equivalent knowledge of Java) (with a grade of "C-" or better in each); Allowed Declared Majors: Computer Science, Applied and Computational Math or Software Engineering. Or instructor consent.
+Units: 3

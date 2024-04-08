@@ -9,23 +9,22 @@ int main() {
         std::cout << "2. CSU Monterey\n"; 
         const int input = read(": ");
         std::string choice; 
-        switch (input)
-        {
-        case 1:
-            choice = "Files/FSCSCI.txt";
-            break;
-        case 2:
-            choice = "Files/MCST.txt";
-            break;
-        case 3:
-            choice = "Files/SJSUCS.txt";
-            break;
-        case 4: 
-            std::cout << "exiting the program..\n";
-            running = false;
-            break;
-        default:
-            break;
+        switch (input) {
+            case 1:
+                choice = "../Files/FSCSCI.txt";
+                break;
+            case 2:
+                choice = "../Files/MCST.txt";
+                break;
+            case 3:
+                choice = "../Files/SJSUCS.txt";
+                break;
+            case 4: 
+                std::cout << "exiting the program..\n";
+                running = false;
+                break;
+            default:
+                break;
         }
         if(running) Catalog course_catalog(choice);
     } while(running);
